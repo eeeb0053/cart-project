@@ -49,6 +49,19 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
         http.authorizeRequests()//
                 .antMatchers("/users/signin").permitAll()//
                 .antMatchers("/users/signup").permitAll()//
+                .antMatchers("/exhbns/all").permitAll()
+                .antMatchers("/exhbns/one/{id}").permitAll()
+                .antMatchers("/exhbns/find/{id}").permitAll()
+                .antMatchers("/exhbns/now").permitAll()
+                .antMatchers("/exhbns/fin").permitAll()
+                .antMatchers("/exhbns/topList").permitAll()
+                .antMatchers("/exhbns/search/{exhbnTitle}").permitAll()
+                .antMatchers("/exhbns/hall/{id}").permitAll()
+                .antMatchers("/exhbns/halls/{id}").permitAll()
+                .antMatchers("/halls").permitAll()
+                .antMatchers("/halls/one/{id}").permitAll()
+                .antMatchers("/halls/find/{id}").permitAll()
+                .antMatchers("/reviews").permitAll()
                 .antMatchers("/h2-console/**/**").permitAll()
                 // Disallow everything else..
                 .anyRequest().authenticated();

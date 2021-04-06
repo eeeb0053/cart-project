@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import { Row, Col, Input, Rate, Checkbox, Button } from 'antd';
 import { FormControl, RadioGroup, DragAndDropUploader } from 'components/index';
@@ -6,15 +6,19 @@ import { Form, Label, GroupTitle, Description } from 'container/SinglePage/Revie
 import axios from 'axios';
 
 const ReviewForm = () => {
-  const { control, register, errors, setValue, handleSubmit } = useForm({
-    mode: 'onChange',
-    });
-  
-  const [ reviewTitle, setReviewTitle ] = useState('')
-  const [ reviewContent, setReviewContent ] = useState('')
-  const [ regDate, setRegDate ] = useState('')
-  const [ score, setScore ] = useState(0)
-  const { value } = useState(3);
+  const { control, register, errors, setValue, handleSubmit } = useForm();
+  const [review,setReview ] = useState({
+    reviewTitle : "",
+    reviewContent : "",
+    regDate : "",
+    score : 0,
+  })
+
+  const{reviewTitle, reviewContent, regDate, score} = review
+  const onChange = useCallback(e => {
+    setReview({...review, [e.target.name]: e.target.value})
+  })
+ 
   const desc = ['1', '2', '3', '4', '5'];
 
   const onSubmit = e => {
@@ -32,13 +36,8 @@ const ReviewForm = () => {
     })
   };
 
-  const handleChange = value => {
-    setScore(value)
-  }
-  
-
   return (
-    <Form onSubmit={handleSubmit(onSubmit)}>
+    <Form onSubmit={e => e.preventDefault()}>
       <FormControl
         label="별점"
         htmlFor="score"
@@ -46,9 +45,9 @@ const ReviewForm = () => {
       >
         <span>
         <Rate 
-          tooltips={desc} onChange={ handleChange }
+          tooltips={desc} onChange={ onChange }
           id="score"
-          name="score"
+          name="score" value={score}
           defaultValue=""
         />
           {score ? <span className="ant-rate-text">{desc[score - 1]}</span> : ''}
@@ -60,14 +59,14 @@ const ReviewForm = () => {
         error={errors.reviewTitle && <span>This field is required!</span>}
       >
         <Input 
-          onChange = {e => {setReviewTitle(`${e.target.value}`)}}
+          onChange = {onChange}
           id="reviewTitle"
-          name="reviewTitle"
+          name="reviewTitle" value={reviewTitle}
           defaultValue=""
           control={control}
           placeholder="전시회 제목을 입력해주세요"
           rules={{
-            required: true,
+            required: true
           }}/>
       </FormControl>
       <FormControl
@@ -76,9 +75,9 @@ const ReviewForm = () => {
         error={errors.reviewContent && <span>This field is required!</span>}
       >
         <Input.TextArea 
-          rows={5} onChange = {e => {setReviewContent(`${e.target.value}`)}}
+          rows={5} onChange = {onChange}
           id="reviewContent"
-          name="reviewContent"
+          name="reviewContent" value={reviewContent}
           defaultValue=""
           control={control}
           placeholder="전시회는 어떠셨나요?"
@@ -107,7 +106,7 @@ const ReviewForm = () => {
       </FormControl>
       <FormControl className="submit-container">
         <Button htmlType="submit" type="primary" size="large"
-                /*onClick = {e => save()}*/>
+                onClick = {onSubmit}>
           작성 완료
         </Button>
       </FormControl>

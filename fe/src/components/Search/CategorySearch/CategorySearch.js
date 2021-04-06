@@ -19,13 +19,13 @@ import CategroySearchWrapper, {
 const CategotySearch = ({ history, location }) => {
   const searchParams = getStateFromUrl(location);
   const state = {
-    amenities: searchParams.amenities || [],
-    property: searchParams.property || [],
-    date_range: searchParams.date_range || {
+    genre: searchParams.genre || [],
+    hall: searchParams.hall || [],
+    showing: searchParams.showing || {
       setStartDate: null,
       setEndDate: null,
     },
-    price: searchParams.price || {
+    finished: searchParams.finished || {
       min: 0,
       max: 100,
       defaultMin: 0,
@@ -38,7 +38,7 @@ const CategotySearch = ({ history, location }) => {
     room: parseInt(searchParams.room) || 0,
     guest: parseInt(searchParams.guest) || 0,
   };
-  const { amenities, property, date_range, price, room, guest } = state;
+  const { genre, hall, showing, finished, room, guest } = state;
   const [countRoom, setRoom] = useState(room);
   const [countGuest, setGuest] = useState(guest);
 
@@ -83,8 +83,6 @@ const CategotySearch = ({ history, location }) => {
   };
 
   const onSearchReset = () => {
-    setRoom(0);
-    setGuest(0);
     const search = setStateToUrl({ reset: '' });
     history.push({
       pathname: '/listing',
@@ -95,138 +93,70 @@ const CategotySearch = ({ history, location }) => {
   return (
     <CategroySearchWrapper>
       <ViewWithPopup
-        className={amenities.length ? 'activated' : ''}
+        className={genre.length ? 'activated' : ''}
         key={getAmenities.id}
         noView={true}
         view={
           <Button type="default">
             {getAmenities.name}
-            {amenities.length > 0 && `: ${amenities.length}`}
+            {genre.length > 0 && `: ${genre.length}`}
           </Button>
         }
         popup={
           <Checkbox.Group
             options={getAmenities.options}
-            defaultValue={amenities}
-            onChange={(value) => onChange(value, 'amenities')}
+            defaultValue={genre}
+            onChange={(value) => onChange(value, 'genre')}
           />
         }
       />
 
       <ViewWithPopup
-        className={property.length ? 'activated' : ''}
+        className={hall.length ? 'activated' : ''}
         key={getPropertyType.id}
         noView={true}
         view={
           <Button type="default">
             {getPropertyType.name}
-            {property.length > 0 && `: ${property.length}`}
+            {hall.length > 0 && `: ${hall.length}`}
           </Button>
         }
         popup={
           <Checkbox.Group
             options={getPropertyType.options}
-            defaultValue={property}
-            onChange={(value) => onChange(value, 'property')}
+            defaultValue={hall}
+            onChange={(value) => onChange(value, 'hall')}
           />
         }
       />
 
       <ViewWithPopup
         className={
-          Object.keys('date_range').length !== null &&
-          date_range.setStartDate !== null
+          Object.keys('showing').length !== null &&
+          showing.setStartDate !== null
             ? 'activated'
             : ''
         }
         key={400}
         noView={true}
-        view={<Button type="default">Choose Date</Button>}
+        view={<Button type="default">진행중인 전시</Button>}
       />
 
       <ViewWithPopup
         className={
-          price.min === price.defaultMin && price.max === price.defaultMax
-            ? ''
-            : 'activated'
+          Object.keys('showing').length !== null &&
+          showing.setStartDate !== null
+            ? 'activated'
+            : ''
         }
-        key={300}
+        key={400}
         noView={true}
-        view={
-          <Button type="default">
-            {price.min > 0 || price.max < 100
-              ? `Price: ${price.min}, ${price.max}`
-              : `Price per night`}
-          </Button>
-        }
-        popup={
-          <Slider
-            range
-            marks={priceInit}
-            min={price.defaultMin}
-            max={price.defaultMax}
-            defaultValue={[price.min, price.max]}
-            onAfterChange={(value) => onChange(value, 'price')}
-          />
-        }
+        view={<Button type="default">종료된 전시</Button>}
       />
 
-      <ViewWithPopup
-        key={200}
-        noView={true}
-        className={countRoom || countGuest ? 'activated' : ''}
-        view={
-          <Button type="default">
-            Room {countRoom > 0 && `: ${countRoom}`}, Guest
-            {countGuest > 0 && `: ${countGuest}`}
-          </Button>
-        }
-        popup={
-          <RoomGuestWrapper>
-            <ItemWrapper>
-              <strong>Room</strong>
-              <InputIncDec
-                id="room"
-                increment={() => setRoom((countRoom) => countRoom + 1)}
-                decrement={() =>
-                  setRoom((countRoom) => countRoom > 0 && countRoom - 1)
-                }
-                onChange={(e) => setRoom(e.target.value)}
-                value={countRoom}
-              />
-            </ItemWrapper>
-
-            <ItemWrapper>
-              <strong>Guest</strong>
-              <InputIncDec
-                id="guest"
-                increment={() => setGuest((countGuest) => countGuest + 1)}
-                decrement={() =>
-                  setGuest((countGuest) => countGuest > 0 && countGuest - 1)
-                }
-                onChange={(e) => setGuest(e.target.value)}
-                value={countGuest}
-              />
-            </ItemWrapper>
-
-            <ActionWrapper>
-              {countRoom || countGuest ? (
-                <Button type="default" onClick={e => handleRoomGuestCancel()}>
-                  Clear
-                </Button>
-              ) : (
-                ''
-              )}
-              <Button type="primary" onClick={e => handleRoomGuestApply()}>
-                Apply
-              </Button>
-            </ActionWrapper>
-          </RoomGuestWrapper>
-        }
-      />
       <div className="view_with__popup">
         <div className="popup_handler">
-          <Button type="default" onClick={e => onSearchReset()}>
+          <Button type="default" onClick={ onSearchReset }>
             Reset
           </Button>
         </div>

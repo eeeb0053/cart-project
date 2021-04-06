@@ -5,7 +5,7 @@ import useWindowSize from 'library/hooks/useWindowSize';
 import useDataApi from 'library/hooks/useDataApi';
 import { EXHBN_LIST_PAGE, EXHBN_DETAIL_PAGE } from 'settings/constant';
 const RecommendExhbn = () => {
-  const { data, loading } = useDataApi('http://localhost:8080/exhbns');
+  const { data, loading } = useDataApi('http://localhost:8080/exhbns/all');
   const { width } = useWindowSize();
 
   let posts = data;

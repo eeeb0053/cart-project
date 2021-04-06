@@ -27,7 +27,7 @@ const SignUp = () => {
         <SignUpForm />
         <Divider>SNS로 가입하기</Divider>
         <Text>
-          이미 회원가입이 되어있습니다! &nbsp;
+          이미 회원입니다. &nbsp;
           <Link to={LOGIN_PAGE}>로그인하러가기</Link>
         </Text>
       </FormWrapper>

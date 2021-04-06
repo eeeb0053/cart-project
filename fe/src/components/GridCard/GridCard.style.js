@@ -217,7 +217,7 @@ export const TitleArea = styled.div`
   }
 `;
 
-export const PriceArea = styled.div`
+export const DateArea = styled.div`
   color: ${themeGet('text.0', '#2C2C2C')};
   font-size: 13px;
   font-weight: 400;

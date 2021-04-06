@@ -30,7 +30,7 @@ public class HallServiceImpl extends AbstractService<Hall> implements HallServic
 	}
 	@Override 
     public Hall getOne(long id) {
-    	return getOne(id);
+    	return hallRepository.getOne(id);
     }
 	@Override 
     public Optional<Hall> findById(long id) {

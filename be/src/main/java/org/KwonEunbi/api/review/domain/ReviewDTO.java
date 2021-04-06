@@ -6,6 +6,8 @@ import org.springframework.stereotype.Component;
 
 import lombok.Data;
 
+import java.util.Date;
+
 @Component @Data @Lazy
 public class ReviewDTO {
 	private long reviewNum;
@@ -13,7 +15,7 @@ public class ReviewDTO {
 	private long userNum;
 	private String reviewTitle;
 	private String reviewContent;
-	private String regDate;
+	private Date regDate;
 	private String score;
 }
 /*

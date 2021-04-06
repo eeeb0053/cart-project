@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState , useCallback} from 'react';
 import axios from "axios";
 import { Link, Redirect } from 'react-router-dom';
 import { useForm, Controller } from 'react-hook-form';
@@ -6,20 +6,29 @@ import { MdLockOpen } from 'react-icons/md';
 import { Input, Switch, Button } from 'antd';
 import { FormControl } from 'components/index';
 import { AuthContext } from 'context/index';
+import { useHistory } from 'react-router';
 import { FORGET_PASSWORD_PAGE } from 'settings/constant';
 import { FieldWrapper, SwitchWrapper, Label } from 'container/Auth/Auth.style';
-import {TextField} from '@material-ui/core'
+import { HOME_PAGE } from 'settings/constant';
 
 const SignInForm = () => {
   const {control} = useForm();
-  const [username, setUsername] = useState('')
-  const [password, setPassword] = useState('')
-  const API_URL = "http://localhost:8080/users/";
+  const history = useHistory();
+  const [userLogin, setUserLogin ] = useState({
+    username: "",
+    password: ""
+  })
+  const {username, password} = userLogin
+  const onChange = useCallback(e => {
+    setUserLogin({...userLogin, [e.target.name]: e.target.value})
+  })
+  const URL = 'http://localhost:8080';
 
   const authHeader = () => {
     const user = JSON.parse(localStorage.getItem('user'));
-    if (user && user.accessToken) {
-      return { Authorization: 'Bearer ' + user.accessToken }; // for Spring Boot back-end
+    const token = localStorage.getItem('token');
+    if (user && token) {
+      return { Authorization: 'Bearer ' + token }; // for Spring Boot back-end
       // return { 'x-access-token': user.accessToken };       // for Node.js Express back-end
     } else {
       return {};
@@ -28,31 +37,23 @@ const SignInForm = () => {
 
   const login = e => {
     e.preventDefault()
-    axios.post(API_URL + "signin", {
-      username,
-      password
+    axios({
+      url: URL+'/users/signin',
+      method: 'post',
+      headers: {'Content-Type': 'application/json', 'Authorization' : 'JWT fefege..'},
+      data: userLogin
     })
     .then(response => {
-      alert(`진입`)
-      if (response.data.accessToken) {
-        localStorage.setItem("user", JSON.stringify(response.data));
+      if (response.data.token) {
+        localStorage.setItem("user", JSON.stringify(response.data.user));
+        localStorage.setItem("token", response.data.token);
+        history.push(HOME_PAGE)
+      } else{
+        alert(`토큰값이 없습니다.`)
       }
-      return response.data;
     })
     .catch(error => {
       alert(error)
-    });
-  }
-
-  const logout = () => {
-    localStorage.removeItem("user");
-  }
-
-  const register = (username, email, password) => {
-    return axios.post(API_URL + "signup", {
-      username,
-      email,
-      password
     });
   }
 
@@ -65,12 +66,10 @@ const SignInForm = () => {
       <FormControl
         label="ID"
       >
-        <Controller
-          as={<Input
-            onChange = {e => {setUsername(`${e.target.value}`)}}
-          />}
-          id="userid" 
-          name="userid"
+        <Input
+            onChange = {onChange}
+          id="username" 
+          name="username" value={username}
           defaultValue=""
           control={control}
           rules={{ required: true }}
@@ -79,12 +78,10 @@ const SignInForm = () => {
       <FormControl
         label="비밀번호"
       >
-        <Controller
-          as={<Input.Password 
-            onChange = {e => {setPassword(`${e.target.value}`)}}
-          />}
+        <Input.Password 
+            onChange = {onChange}
           id="password"
-          name="password"
+          name="password" value={password}
           defaultValue=""
           control={control}
           rules={{ required: true, minLength: 6, maxLength: 20 }}
@@ -110,7 +107,7 @@ const SignInForm = () => {
         htmlType="submit"
         size="large"
         style={{ width: '100%' }}
-        onClick= {e => login()}
+        onClick= {login}
       >
         <MdLockOpen />
         Login

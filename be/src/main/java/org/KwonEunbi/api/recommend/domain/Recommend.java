@@ -9,6 +9,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.KwonEunbi.api.analysis.domain.Analysis;
 
 import lombok.Getter;
@@ -17,7 +19,8 @@ import lombok.Getter;
 public class Recommend {
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "rec_num") private long recNum;
-	
+
+	@JsonBackReference
 	@ManyToOne
 	@JoinColumn(name = "anal_num")
 	private Analysis analysis;

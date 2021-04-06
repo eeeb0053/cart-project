@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import { Element } from 'react-scroll';
 import { Heading, Text, Rating } from 'components/index';
 import InformationWrapper, { Info, Img } from 'container/SinglePage/Information/Information.style';
-import { RatingMeta } from 'container/SinglePage/ExhbnDetail.style';
+import { RatingMeta } from 'container/Exhibition/ExhibitionDetail.style';
+import Moment from 'moment';
 
 const Information = ({
   title,
@@ -11,7 +12,7 @@ const Information = ({
   price,
   image,
   content,
-  start, end,
+  startDate, endDate,
   genre,
   artist,
   titleStyle,
@@ -34,7 +35,9 @@ const Information = ({
               <li><strong>가격</strong> <span>{price === '무료' || price === '' ? '무료' :
                price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')+'원'}</span></li><br />
               <li><strong>장소</strong> <span>{location}</span></li><br />
-              <li><strong>기간</strong> <span>{start} ~ {end}</span></li><br />
+              <li><strong>기간</strong> <span>
+              {Moment({startDate}).format('YYYY-MM-DD')} ~ {Moment({endDate}).format('YYYY-MM-DD')}
+              </span></li><br />
           </ul>
           </Info>
       </InformationWrapper>

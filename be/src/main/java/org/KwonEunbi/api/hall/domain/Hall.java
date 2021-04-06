@@ -11,6 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.KwonEunbi.api.exhibition.domain.Exhbn;
 
 import lombok.Getter;
@@ -29,7 +30,8 @@ public class Hall {
     @Column(name = "hall_pnumber") private String hallPnumber;
     @Column(name = "hall_info") private String hallInfo;
     @Column(name = "hall_image") private String hallImage;
-    
+
+    @JsonManagedReference
     @OneToMany(mappedBy = "hall")
     private List<Exhbn> exhbnList = new ArrayList<>();
 }

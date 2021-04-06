@@ -3,8 +3,10 @@ package org.KwonEunbi.api.exhibition.controller;
 import java.util.List;
 import java.util.Optional;
 
+import com.querydsl.core.Tuple;
 import org.KwonEunbi.api.common.controller.AbstractController;
 import org.KwonEunbi.api.exhibition.domain.Exhbn;
+import org.KwonEunbi.api.exhibition.domain.ExhbnDTO;
 import org.KwonEunbi.api.exhibition.service.ExhbnServiceImpl;
 import org.KwonEunbi.api.hall.domain.Hall;
 
@@ -64,9 +66,6 @@ public class ExhbnController extends AbstractController<Exhbn> {
 		if(!(t.getExhbnImage().equals(e.getExhbnImage()) || t.getExhbnImage().equals(""))) {
 			e.setExhbnImage(t.getExhbnImage());
 		}
-		if(!(t.getHallLocation().equals(e.getHallLocation()) || t.getHallLocation().equals(""))) {
-			e.setHallLocation(t.getHallLocation());
-		}
 		return ResponseEntity.ok(service.save(t));
 	}
 	
@@ -100,13 +99,38 @@ public class ExhbnController extends AbstractController<Exhbn> {
 		return ResponseEntity.ok(service.findAll());
 	}
 
-	@GetMapping("/find/{exhbnNum}")
-	public ResponseEntity<Exhbn> findByExhbnNum(long exhbnNum) {
-		return ResponseEntity.ok(service.findByExhbnNum(exhbnNum));
-	}
 
 	@GetMapping("/search/{exhbnTitle}")
 	public ResponseEntity<List<Exhbn>> searchTitle(@PathVariable String exhbnTitle){
 		return ResponseEntity.ok(service.searchTitle(exhbnTitle));
+	}
+
+	@GetMapping("/all")
+	public ResponseEntity<List<Exhbn>> sortList(){
+		return ResponseEntity.ok(service.sortList());
+	}
+
+	@GetMapping("/topList")
+	public ResponseEntity<List<ExhbnDTO>> topList(){
+		return ResponseEntity.ok(service.topList());
+	}
+
+	@GetMapping("/now")
+	public ResponseEntity<List<Exhbn>> nowInExhbn(){
+		return ResponseEntity.ok(service.nowInExhbn());
+	}
+
+	@GetMapping("/fin")
+	public ResponseEntity<List<Exhbn>> finExhbn(){
+		return ResponseEntity.ok(service.finExhbn());
+	}
+
+	@GetMapping("/hall/{id}")
+	public ResponseEntity<List<Exhbn>> findByHall(@PathVariable  long id) {
+		return ResponseEntity.ok(service.findByHall(id));
+	}
+	@GetMapping("/halls/{id}")
+	public ResponseEntity<List<ExhbnDTO>> findByHallNum(@PathVariable  long id) {
+		return ResponseEntity.ok(service.findByHallNum(id));
 	}
 }

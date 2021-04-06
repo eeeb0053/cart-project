@@ -13,6 +13,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.KwonEunbi.api.exhibition.domain.Exhbn;
 import org.KwonEunbi.api.recommend.domain.Recommend;
 import org.KwonEunbi.api.user.domain.UserVO;
@@ -24,15 +26,18 @@ import org.KwonEunbi.api.user.domain.UserVO;
 public class Analysis {
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "anal_num") private long analNum;
-	
+
+	@JsonBackReference
 	@ManyToOne
 	@JoinColumn(name = "user_num")
 	private UserVO user;
-	
+
+	@JsonBackReference
 	@ManyToOne
 	@JoinColumn(name = "exhbn_num")
 	private Exhbn exhbn;
-	
+
+	@JsonManagedReference
 	@OneToMany(mappedBy = "analysis")
 	private List<Recommend> recommendList = new ArrayList<>();
 }

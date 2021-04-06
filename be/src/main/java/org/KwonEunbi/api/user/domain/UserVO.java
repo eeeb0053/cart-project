@@ -7,6 +7,7 @@ import java.util.Set;
 
 import javax.persistence.*;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.KwonEunbi.api.analysis.domain.Analysis;
 import org.KwonEunbi.api.booking.domain.Booking;
 import org.KwonEunbi.api.review.domain.Review;
@@ -27,13 +28,16 @@ public class UserVO {
 	@Column private String birthday;
 	@Column(name = "phone_number") private String phoneNumber;
 	@Column(name = "prefer_genre") private String preferGenre;
-	
+
+	@JsonManagedReference
 	@OneToMany(mappedBy = "user")
 	private List<Analysis> analysisList = new ArrayList<>();
-	
+
+	@JsonManagedReference
 	@OneToMany(mappedBy = "user")
 	private List<Booking> bookingList = new ArrayList<>();
-	
+
+	@JsonManagedReference
 	@OneToMany(mappedBy = "user")
 	private List<Review> reviewList = new ArrayList<>();
 

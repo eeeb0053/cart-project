@@ -1,14 +1,13 @@
 import React, { useState, useStyles, useEffect, useRef } from 'react';
 import { Button } from 'antd';
-import { HtmlLabel, ViewWithPopup, InputIncDec } from 'components/index';
+import { HtmlLabel, InputIncDec } from 'components/index';
 import ReservationFormWrapper, {
   FormActionArea,
   FieldWrapper,
-  RoomGuestWrapper,
   ItemWrapper,
 } from 'container/SinglePage/Reservation/Reservation.style.js';
-import { Link } from 'react-router-dom'
-import { BOOKING_PAGE } from 'settings/constant'
+import { Link, useHistory } from 'react-router-dom'
+import { BOOKING_PAGE, LOGIN_PAGE } from 'settings/constant'
 import DatePicker from "react-datepicker"; 
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -16,6 +15,7 @@ import "react-datepicker/dist/react-datepicker.css";
 const RenderReservationForm = ( props ) => {
   const [bookdate, setBookdate] = useState(new Date());
   const [tickets, setTickets] = useState(0);
+  const history = useHistory();
 
   const handleIncrement = (tickets) => {
     setTickets(tickets + 1);
@@ -33,6 +33,15 @@ const RenderReservationForm = ( props ) => {
   const handleSubmit = e => {
     e.preventDefault();
   };
+  const onClick = e => {
+    e.preventDefault();
+    { localStorage.getItem("token") !== null ? 
+      history.push(`${BOOKING_PAGE}/${props.number}`)
+    :
+      alert(`로그인 후에 이용 가능합니다.`)
+      history.push(LOGIN_PAGE)
+    }
+  }
 
   return (
     <ReservationFormWrapper className="form-container" onSubmit={handleSubmit}>
@@ -50,9 +59,9 @@ const RenderReservationForm = ( props ) => {
                 <strong>매수</strong>
                 <InputIncDec
                   id="adult"
-                  increment={() => handleIncrement(tickets)}
-                  decrement={() => handleDecrement(tickets)}
-                  onChange={e => handleIncDecOnChange()}
+                  increment={handleIncrement}
+                  decrement={handleDecrement}
+                  onChange={handleIncDecOnChange}
                   value={tickets}
                 />
          </ItemWrapper>
@@ -60,11 +69,11 @@ const RenderReservationForm = ( props ) => {
       <FormActionArea>
         <Link to={`${BOOKING_PAGE}/${props.number}`}>
         <Button htmlType="submit" type="primary" 
-                tickets={tickets} bookDate={bookdate} price={props.price}>
+                tickets={tickets} bookDate={bookdate} price={props.price}
+                onClick = {onClick}>
           예매하기
         </Button>
         </Link>
-
       </FormActionArea>
     </ReservationFormWrapper>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import Sticky from 'react-stickynode';
 import { ScrollBar } from 'components/index';
-import { TobBarWrapper } from 'container/SinglePage/ExhbnDetail.style';
+import { TobBarWrapper } from 'container/Exhibition/ExhibitionDetail.style';
 
 const topBarMenu = [
   {

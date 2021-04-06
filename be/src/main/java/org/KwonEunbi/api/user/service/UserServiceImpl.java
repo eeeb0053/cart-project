@@ -2,13 +2,12 @@ package org.KwonEunbi.api.user.service;
 
 import org.KwonEunbi.api.security.domain.SecurityProvider;
 import org.KwonEunbi.api.security.exception.SecurityRuntimeException;
+import org.KwonEunbi.api.user.domain.Role;
 import org.KwonEunbi.api.user.domain.UserVO;
 import org.KwonEunbi.api.user.repository.UserRepository;
 import lombok.Getter;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
@@ -65,13 +64,18 @@ public class UserServiceImpl implements UserService{
 	}
 
 	@Override
-	public String signin(String username, String password) {
+	public Map<String, Object> signin(String username, String password) {
 		try {
 			//   manager.authenticate(new UsernamePasswordAuthenticationToken(username, password));
+			Map<String, Object> map = new HashMap<>();
 			System.out.println("ID:  "+username);
-			String tok = provider.createToken(username, userRepo.findByUsername(username).getRoles());
+			UserVO user = userRepo.findByUsername(username);
+			List<Role> roles = user.getRoles();
+			String tok = provider.createToken(username, roles);
 			System.out.println("token :: "+tok);
-			return tok;
+			map.put("token", tok);
+			map.put("user", user);
+			return map;
 		} catch (AuthenticationException e) {
 			throw new SecurityRuntimeException("Invalid username/password supplied", HttpStatus.UNPROCESSABLE_ENTITY);
 		}
@@ -80,6 +84,9 @@ public class UserServiceImpl implements UserService{
 	public String signup(UserVO user) {
 		if (!userRepo.existsByUsername(user.getUsername())) {
 			user.setPassword(passwordEncoder.encode(user.getPassword()));
+			List<Role> roles = new ArrayList<>();
+			roles.add(Role.USER);
+			user.setRoles(roles);
 			userRepo.save(user);
 			return provider.createToken(user.getUsername(), user.getRoles());
 		} else {

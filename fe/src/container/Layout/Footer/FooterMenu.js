@@ -21,9 +21,6 @@ const FooterMenu = () => {
       <Menu.Item key="2">
         <NavLink to={`${HALL_DETAIL_PAGE}/1`}>Hall</NavLink>
       </Menu.Item>
-      <Menu.Item key="3">
-        <NavLink to={`${USER_PROFILE_PAGE}`}>MyPage</NavLink>
-      </Menu.Item>
     </Menu>
   );
 };

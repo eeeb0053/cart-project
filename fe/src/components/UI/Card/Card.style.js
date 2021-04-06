@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.16);
   position: fixed;
   width: 100%;
-  top: 100px;
+  top: 50px;
   `;
 export const Header = styled.header`
   display: flex;

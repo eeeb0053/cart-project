@@ -18,8 +18,8 @@ const LoadMore = ({
         {loadMoreComponent ? (
           loadMoreComponent
         ) : (
-          <Button loading={loading} onClick={e => handleLoadMore()}>
-            {buttonText || 'Load More'}
+          <Button loading={loading} onClick={handleLoadMore}>
+            {buttonText || '더보기'}
           </Button>
         )}
       </Box>
@@ -27,7 +27,7 @@ const LoadMore = ({
   );
 };
 
-export default function SectionGrid({
+const SectionGrid = ({
   data = [],
   totalItem,
   limit,
@@ -42,7 +42,7 @@ export default function SectionGrid({
   columnStyle,
   loadMoreStyle,
   link,
-}) {
+}) => {
   const n = limit ? Number(limit) : 1;
   const limits = Array(n).fill(0);
 
@@ -133,3 +133,5 @@ SectionGrid.defaultProps = {
     mt: '1rem',
   },
 };
+
+export default SectionGrid;

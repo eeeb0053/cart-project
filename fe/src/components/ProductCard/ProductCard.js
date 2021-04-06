@@ -6,6 +6,7 @@ import Favourite from 'components/UI/Favorite/Favorite';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import GridCard from 'components/GridCard/GridCard';
+import Moment from 'moment';
 
 const responsive = {
   desktop: {
@@ -58,15 +59,8 @@ const PostGrid = ({
       }
       title={<TextLink link={`exhbns/${exhbnNum}`} content={exhbnTitle}/>}
       location={`${hallLocation}`}
-      price={`${startDate} ~ ${endDate}`}
+      date={`${Moment(startDate).format('YYYY-MM-DD')} ~ ${Moment(endDate).format('YYYY-MM-DD')}`}
       rating={<Rating rating={rating} ratingCount={ratingCount} type="bulk" />}
-      viewDetailsBtn={
-        <TextLink
-          link={`exhbns/${exhbnNum}`}
-          icon={<FiExternalLink />}
-          content="View Details"
-        />
-      }
     >
       <Carousel
         additionalTransfrom={0}

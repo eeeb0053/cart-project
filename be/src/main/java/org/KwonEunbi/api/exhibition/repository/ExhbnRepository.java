@@ -1,15 +1,22 @@
 package org.KwonEunbi.api.exhibition.repository;
 
+import com.querydsl.core.Tuple;
 import org.KwonEunbi.api.exhibition.domain.Exhbn;
 
 import java.util.List;
 
+import org.KwonEunbi.api.exhibition.domain.ExhbnDTO;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 interface ExhbnCustomRepository{
 	public List<Exhbn> searchTitle(String exhbnTitle);
+	public List<Exhbn> sortList();
+	public List<Exhbn> nowInExhbn();
+	public List<Exhbn> finExhbn();
+	public List<Exhbn> findByHall(long id);
+	public List<ExhbnDTO> findByHallNum(long id);
 }
 public interface ExhbnRepository extends JpaRepository<Exhbn, Long>, ExhbnCustomRepository {
 	@Query(value="update exhbns e set e.exhbn_title = :exhbnTitle, e.start_date = :startDate, "

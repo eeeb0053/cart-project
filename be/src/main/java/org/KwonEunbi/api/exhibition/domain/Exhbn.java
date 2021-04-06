@@ -1,6 +1,7 @@
 package org.KwonEunbi.api.exhibition.domain;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -13,6 +14,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.KwonEunbi.api.analysis.domain.Analysis;
 import org.KwonEunbi.api.booking.domain.Booking;
 import org.KwonEunbi.api.hall.domain.Hall;
@@ -35,9 +38,9 @@ public class Exhbn {
     @Column(name = "exhbn_title")
     private String exhbnTitle;
     @Column(name = "start_date")
-    private String startDate;
+    private Date startDate;
     @Column(name = "end_date")
-    private String endDate;
+    private Date endDate;
     @Column(name = "exhbn_genre")
     private String exhbnGenre;
     @Column(name = "exhbn_price")
@@ -48,19 +51,21 @@ public class Exhbn {
     private String exhbnContent;
     @Column(name = "exhbn_image")
     private String exhbnImage;
-    @Column(name = "hall_location")
-    private String hallLocation;
 
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "hall_num")
     private Hall hall;
 
+    @JsonManagedReference
     @OneToMany(mappedBy = "exhbn")
     private List<Analysis> analysisList = new ArrayList<>();
 
+    @JsonManagedReference
     @OneToMany(mappedBy = "exhbn")
     private List<Booking> bookingList = new ArrayList<>();
 
+    @JsonManagedReference
     @OneToMany(mappedBy = "exhbn")
     private List<Review> reviewList = new ArrayList<>();
 }

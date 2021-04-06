@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import SummaryWrapper, { PosterImage, Info, ButtonGroup, PosterBox, InfoBox, ButtonBox } from 'container/SinglePage/Summary/Summary.style';
 import { Heading, Rating, Favorite, FaceBookShare, TwitterShare } from 'components/index';
-import { RatingMeta } from 'container/SinglePage//ExhbnDetail.style';
+import { RatingMeta } from 'container/Exhibition/ExhibitionDetail.style';
 import { Button, Menu, Dropdown } from 'antd';
-import axios from 'axios';
+import Moment from 'moment';
 
 const SocialShareMenu = ( props) => {
 
@@ -29,7 +29,7 @@ const {
   titleStyle,
   media,
   location,
-  start, end, genre, price, artist}
+  startDate, endDate, genre, price, artist}
 = props;
 
 return (
@@ -65,7 +65,9 @@ return (
                 </RatingMeta>
                 <ul>
                     <li><strong>장소</strong> <span>{location}</span></li>
-                    <li><strong>기간</strong> <span>{start} ~ {end}</span></li>
+                    <li><strong>기간</strong> <span>
+                    {Moment({startDate}).format('YYYY-MM-DD')} ~ {Moment({endDate}).format('YYYY-MM-DD')}
+                      </span></li>
                     <li><strong>가격</strong> <span>
                       {price === '무료' || price === '' ? '무료' :
                        price.replace(/\B(?=(\d{3})+(?!\d))/g, ',')+'원'}

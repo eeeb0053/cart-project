@@ -9,14 +9,14 @@ const SummaryWrapper = styled.div`
 export const PosterBox = styled.div`
   float: left;
   width: 45%;
-  margin-top: 100px;
+  margin-top: 70px;
   
 `;
 
 export const InfoBox = styled.div`
   float: left;
   width: 55%;
-  margin-top: 100px;
+  margin-top: 70px;
 `;
 
 export const PosterImage = styled.div`

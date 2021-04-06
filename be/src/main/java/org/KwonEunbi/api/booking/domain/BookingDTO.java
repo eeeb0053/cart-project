@@ -5,12 +5,14 @@ import org.springframework.stereotype.Component;
 
 import lombok.Data;
 
+import java.util.Date;
+
 @Component @Data @Lazy
 public class BookingDTO {
 	private long bookNum;
 	private long exhbnNum;
 	private long userNum;
-	private String bookDate;
+	private Date bookDate;
 	private String totalPrice;
 	private String bookName;
 	private String bookEmail;

@@ -60,11 +60,5 @@ public class HallController extends AbstractController<Hall> {
 	public ResponseEntity<List<Hall>> findAll() {
 		return ResponseEntity.ok(service.findAll());
 	}
-
-
-//	@GetMapping("find/{name}/{location}")
-//	public ResponseEntity<List<Hall>> findByNameAndLocation(@PathVariable String name, String location) {
-//		return ResponseEntity.ok(service.findByHallNameAndHallLocation(name, location));
-//	}
 	
 }
