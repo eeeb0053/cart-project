@@ -6,19 +6,16 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import lombok.RequiredArgsConstructor;
 import org.KwonEunbi.api.security.domain.SecurityProvider;
 import org.KwonEunbi.api.security.exception.SecurityRuntimeException;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 
 import org.springframework.web.filter.OncePerRequestFilter;
-
+@RequiredArgsConstructor
 public class SecurityFilter extends OncePerRequestFilter{
-    private SecurityProvider provider;
-
-    public SecurityFilter(SecurityProvider provider) {
-        this.provider = provider;
-    }
+    private final SecurityProvider provider;
 
     @Override
     protected void doFilterInternal(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, FilterChain filterChain) throws ServletException, IOException {

@@ -10,12 +10,12 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.KwonEunbi.api.exhibition.domain.Exhbn;
 import org.KwonEunbi.api.user.domain.UserVO;
 
 import lombok.Getter;
-import org.KwonEunbi.api.user.domain.UserVO;
 
 import java.util.Date;
 
@@ -28,15 +28,54 @@ public class Review {
 	@Column(name = "reg_date") private Date regDate;
 	@Column private String score;
 
-	@JsonBackReference
+	@JsonBackReference(value = "user")
 	@ManyToOne
 	@JoinColumn(name = "user_num")
 	private UserVO user;
 
-	@JsonBackReference
+	@JsonBackReference(value = "exhbn")
 	@ManyToOne
 	@JoinColumn(name = "exhbn_num")
 	private Exhbn exhbn;
+
+	public void setReviewNum(long reviewNum) {
+		this.reviewNum = reviewNum;
+	}
+
+	public void setReviewTitle(String reviewTitle) {
+		this.reviewTitle = reviewTitle;
+	}
+
+	public void setReviewContent(String reviewContent) {
+		this.reviewContent = reviewContent;
+	}
+
+	public void setRegDate(Date regDate) {
+		this.regDate = regDate;
+	}
+
+	public void setScore(String score) {
+		this.score = score;
+	}
+
+	public void setUser(UserVO user) {
+		this.user = user;
+	}
+
+	public void setExhbn(Exhbn exhbn) {
+		this.exhbn = exhbn;
+	}
+
+	@Override
+	public String toString() {
+		return "Review{" +
+				"reviewNum=" + reviewNum +
+				", reviewTitle='" + reviewTitle + '\'' +
+				", reviewContent='" + reviewContent + '\'' +
+				", regDate=" + regDate +
+				", score='" + score + '\'' +
+				'}';
+	}
 }
 
 /*

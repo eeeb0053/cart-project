@@ -7,7 +7,7 @@ import { Checkbox } from 'antd';
 import useWindowSize from 'library/hooks/useWindowSize';
 import useDataApi from 'library/hooks/useDataApi';
 import { EXHBN_DETAIL_PAGE } from 'settings/constant';
-import ListingWrapper, { PostsWrapper } from 'container/Exhibition/Listing/Listing.style';
+import ListingWrapper, { PostsWrapper } from 'container/exhibition/Listing/Listing.style';
 
 const HallListing = ({match}) => {
 

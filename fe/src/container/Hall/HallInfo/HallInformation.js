@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import HallWrapper, { 
   HallImage, HallInfo, HallBoxOne, HallBoxTwo, HallSum, 
-  HallBtn } from 'container/Hall/HallInfo/HallInformation.style';
+  HallBtn } from 'container/hall/HallInfo/HallInformation.style';
 import { Heading, Text } from 'components/index';
 import { EXHBN_LIST_PAGE } from 'settings/constant';
 import { Link } from 'react-router-dom';

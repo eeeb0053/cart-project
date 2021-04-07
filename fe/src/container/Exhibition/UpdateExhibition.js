@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Row, Col, Input, Button } from 'antd';
 import { FormControl } from 'components/index';
-import { FormHeader, Title, FormContent, FormAction } from 'container/Exhibition/AddExhibition.style';
+import { FormHeader, Title, FormContent, FormAction } from 'container/exhibition/AddExhibition.style';
 import axios from 'axios'
 import DatePicker from "react-datepicker"; 
 import { Link } from 'react-router-dom';

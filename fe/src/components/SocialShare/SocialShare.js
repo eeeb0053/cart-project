@@ -11,39 +11,33 @@ import {
   FaPinterest,
   FaLinkedinIn,
 } from 'react-icons/fa';
-import { Popover } from 'antd';
 
 export const FaceBookShare = (props) => {
   const { title, shareURL } = props;
   return (
-    <Popover content="Facebook">
       <div className="facebook">
         <FacebookShareButton url={shareURL} quote={title}>
           <FaFacebookF /> Facebook
         </FacebookShareButton>
       </div>
-    </Popover>
   );
 };
 
 export const TwitterShare = (props) => {
   const { shareURL, title, author } = props;
   return (
-    <Popover content="Twitter">
       <div className="twitter">
         <TwitterShareButton url={shareURL} title={title} via={author}>
           <FaTwitter /> Twitter
         </TwitterShareButton>
       </div>
-    </Popover>
   );
 };
 
 export const LinkedInShare = (props) => {
   const { shareURL, title } = props;
   return (
-    <Popover content="Twitter">
-      <div className="twitter">
+      <div className="linkedin">
         <LinkedinShareButton
           url={shareURL}
           title={title}
@@ -53,7 +47,6 @@ export const LinkedInShare = (props) => {
           <FaLinkedinIn /> LinkedIn
         </LinkedinShareButton>
       </div>
-    </Popover>
   );
 };
 
@@ -61,7 +54,6 @@ export const PinterestShare = (props) => {
   const { shareURL, title, media } = props;
   const mediaForPinterest = media ? media[0].url : [];
   return (
-    <Popover content="Pinterest">
       <div className="pinterest">
         <PinterestShareButton
           url={shareURL}
@@ -71,6 +63,5 @@ export const PinterestShare = (props) => {
           <FaPinterest /> Pinterest
         </PinterestShareButton>
       </div>
-    </Popover>
   );
 };

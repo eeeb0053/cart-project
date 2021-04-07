@@ -31,6 +31,7 @@ public class RecommendController extends AbstractController<Recommend>{
 	public ResponseEntity<Long> save(@RequestBody Recommend t) {
 		return ResponseEntity.ok(service.save(t));
 	}
+
 	@DeleteMapping("/delete")
 	public ResponseEntity<Long> delete(@RequestBody Recommend t) {
 		return ResponseEntity.ok(service.delete(t));

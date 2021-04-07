@@ -35,7 +35,7 @@ const routes = [
     path: HOME_PAGE,
     component: Loadable({
       loader: () =>
-        import('container/Home/Home'),
+        import('container/common/Home'),
       loading: Loading,
       modules: ['Home'],
     }),
@@ -45,7 +45,7 @@ const routes = [
     path: LOGIN_PAGE,
     component: Loadable({
       loader: () =>
-        import('container/Auth/SignIn/SignIn'),
+        import('container/user/SignIn/SignIn'),
       loading: Loading,
       modules: ['SignIn'],
     }),
@@ -54,7 +54,7 @@ const routes = [
     path: REGISTRATION_PAGE,
     component: Loadable({
       loader: () =>
-        import('container/Auth/SignUp/SignUp'),
+        import('container/user/SignUp/SignUp'),
       loading: Loading,
       modules: ['SignUp'],
     }),
@@ -63,7 +63,7 @@ const routes = [
     path: FORGET_PASSWORD_PAGE,
     component: Loadable({
       loader: () =>
-        import('container/Auth/ForgetPassword'),
+        import('container/user/ForgetPassword'),
       loading: Loading,
       modules: ['ForgetPassword'],
     }),
@@ -72,7 +72,7 @@ const routes = [
     path: USER_PROFILE_PAGE,
     component: Loadable({
       loader: () =>
-        import('container/MyPage/AccountDetails/UserDetailsPage'),
+        import('container/user/MyPage/AccountDetails/UserDetailsPage'),
       loading: Loading,
       modules: ['UserDetailsPage'],
     }),
@@ -81,7 +81,7 @@ const routes = [
     path: `${BOOKING_PAGE}/:exhbnNum`,
     component: Loadable({
       loader: () =>
-        import('container/Booking/Booking'),
+        import('container/booking/Booking'),
       loading: Loading,
       modules: ['Booking'],
     }),
@@ -90,7 +90,7 @@ const routes = [
     path: BOOKING_LIST_PAGE,
     component: Loadable({
       loader: () =>
-        import('container/Booking/BookingList'),
+        import('container/booking/BookingList'),
       loading: Loading,
       modules: ['BookingList'],
     }),
@@ -99,7 +99,7 @@ const routes = [
     path: EXHBN_LIST_PAGE,
     component: Loadable({
       loader: () =>
-        import('container/Exhibition/Listing/ExhibitionListing'),
+        import('container/exhibition/Listing/ExhibitionListing'),
       loading: Loading,
       modules: ['ExhibitionList'],
     }),
@@ -108,7 +108,7 @@ const routes = [
     path: `${HALL_LIST_PAGE}/:hallNum`,
     component: Loadable({
       loader: () =>
-        import('container/Exhibition/Listing/HallListing'),
+        import('container/exhibition/Listing/HallListing'),
       loading: Loading,
       modules: ['HallList'],
     }),
@@ -117,7 +117,7 @@ const routes = [
     path: `${BOOKING_DETAIL_PAGE}/:bookNum`,
     component: Loadable({
       loader: () =>
-        import('container/Booking/BookingDetail'),
+        import('container/booking/BookingDetail'),
       loading: Loading,
       modules: ['BookingDetail'],
     }),
@@ -126,7 +126,7 @@ const routes = [
     path: `${EXHBN_DETAIL_PAGE}/:exhbnNum`,
     component: Loadable({
       loader: () =>
-        import('container/Exhibition/ExhibitionDetail'),
+        import('container/exhibition/ExhibitionDetail'),
       loading: Loading,
       modules: ['ExbhnDetail'],
     }),
@@ -135,7 +135,7 @@ const routes = [
     path: `${HALL_DETAIL_PAGE}/:hallNum`,
     component: Loadable({
       loader: () =>
-        import('./container/Hall/HallDetail'),
+        import('./container/hall/HallDetail'),
       loading: Loading,
       modules: ['HallDetail'],
     }),
@@ -144,7 +144,7 @@ const routes = [
     path: LISTING_SEARCH_POST_PAGE,
     component: Loadable({
       loader: () =>
-        import('./container/Exhibition/Listing/SearchListing'),
+        import('./container/exhibition/Listing/SearchListing'),
       loading: Loading,
       modules: ['SearchListing'],
     }),
@@ -154,7 +154,7 @@ const routes = [
     path: `${HALL_DETAIL_PAGE}/:hallNum`,
     component: Loadable({
       loader: () =>
-        import('./container/Hall/HallDetail'),
+        import('./container/hall/HallDetail'),
       loading: Loading,
       modules: ['HallDetail'],
     }),
@@ -163,7 +163,7 @@ const routes = [
     path: ADD_EXHBN_PAGE,
     component: Loadable({
       loader: () =>
-        import('./container/Exhibition/AddExhibition'),
+        import('./container/exhibition/AddExhibition'),
       loading: Loading,
       modules: ['AddExhibition'],
     }),
@@ -172,7 +172,7 @@ const routes = [
     path: `${UPDATE_EXHBN_PAGE}/:exhbnNum`,
     component: Loadable({
       loader: () =>
-        import('./container/Exhibition/UpdateExhibition'),
+        import('./container/exhibition/UpdateExhibition'),
       loading: Loading,
       modules: ['UpdateExhbn'],
     }),
@@ -181,7 +181,7 @@ const routes = [
     path: ADD_IMAGE_PAGE,
     component: Loadable({
       loader: () =>
-        import('./container/Exhibition/HotelPhotos'),
+        import('./container/exhibition/HotelPhotos'),
       loading: Loading,
       modules: ['HotelPhotos'],
     }),
@@ -196,7 +196,7 @@ const routes = [
 
 const AccountSettingsPage = Loadable({
   loader: () =>
-    import('./container/MyPage/AccountSettings/AccountSettingsPage'),
+    import('./container/user/MyPage/AccountSettings/AccountSettingsPage'),
   loading: Loading,
   modules: ['AccountSettingsPage'],
 });
@@ -211,7 +211,7 @@ const AccountSettingsPage = Loadable({
 
 const NotFound = Loadable({
   loader: () =>
-    import('./container/404/Error404'),
+    import('./container/common/404/Error404'),
   loading: Loading,
   modules: ['NotFound'],
 });

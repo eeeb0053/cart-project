@@ -68,7 +68,7 @@ public class ExhbnController extends AbstractController<Exhbn> {
 		}
 		return ResponseEntity.ok(service.save(t));
 	}
-	
+
 	@DeleteMapping("")
 	public ResponseEntity<Long> delete(@RequestBody Exhbn t) {
 		return ResponseEntity.ok(service.delete(t));

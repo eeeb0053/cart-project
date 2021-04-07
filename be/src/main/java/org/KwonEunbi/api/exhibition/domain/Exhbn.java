@@ -15,6 +15,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.KwonEunbi.api.analysis.domain.Analysis;
 import org.KwonEunbi.api.booking.domain.Booking;
@@ -28,7 +29,6 @@ import lombok.Setter;
 @Entity
 @Getter
 @Table(name = "exhbns")
-@Setter
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Exhbn {
     @Id
@@ -52,22 +52,89 @@ public class Exhbn {
     @Column(name = "exhbn_image")
     private String exhbnImage;
 
-    @JsonBackReference
+    @JsonBackReference(value = "hall")
     @ManyToOne
     @JoinColumn(name = "hall_num")
     private Hall hall;
 
-    @JsonManagedReference
+    @JsonManagedReference @JsonIgnore
     @OneToMany(mappedBy = "exhbn")
     private List<Analysis> analysisList = new ArrayList<>();
 
-    @JsonManagedReference
+    @JsonManagedReference @JsonIgnore
     @OneToMany(mappedBy = "exhbn")
     private List<Booking> bookingList = new ArrayList<>();
 
-    @JsonManagedReference
+    @JsonManagedReference @JsonIgnore
     @OneToMany(mappedBy = "exhbn")
     private List<Review> reviewList = new ArrayList<>();
+
+    public void setExhbnNum(long exhbnNum) {
+        this.exhbnNum = exhbnNum;
+    }
+
+    public void setExhbnTitle(String exhbnTitle) {
+        this.exhbnTitle = exhbnTitle;
+    }
+
+    public void setStartDate(Date startDate) {
+        this.startDate = startDate;
+    }
+
+    public void setEndDate(Date endDate) {
+        this.endDate = endDate;
+    }
+
+    public void setExhbnGenre(String exhbnGenre) {
+        this.exhbnGenre = exhbnGenre;
+    }
+
+    public void setExhbnPrice(String exhbnPrice) {
+        this.exhbnPrice = exhbnPrice;
+    }
+
+    public void setExhbnArtist(String exhbnArtist) {
+        this.exhbnArtist = exhbnArtist;
+    }
+
+    public void setExhbnContent(String exhbnContent) {
+        this.exhbnContent = exhbnContent;
+    }
+
+    public void setExhbnImage(String exhbnImage) {
+        this.exhbnImage = exhbnImage;
+    }
+
+    public void setHall(Hall hall) {
+        this.hall = hall;
+    }
+
+    public void setAnalysisList(List<Analysis> analysisList) {
+        this.analysisList = analysisList;
+    }
+
+    public void setBookingList(List<Booking> bookingList) {
+        this.bookingList = bookingList;
+    }
+
+    public void setReviewList(List<Review> reviewList) {
+        this.reviewList = reviewList;
+    }
+
+    @Override
+    public String toString() {
+        return "Exhbn{" +
+                "exhbnNum=" + exhbnNum +
+                ", exhbnTitle='" + exhbnTitle + '\'' +
+                ", startDate=" + startDate +
+                ", endDate=" + endDate +
+                ", exhbnGenre='" + exhbnGenre + '\'' +
+                ", exhbnPrice='" + exhbnPrice + '\'' +
+                ", exhbnArtist='" + exhbnArtist + '\'' +
+                ", exhbnContent='" + exhbnContent + '\'' +
+                ", exhbnImage='" + exhbnImage + '\'' +
+                '}';
+    }
 }
 /*
 create table shows(

@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import axios from 'axios';
 import { Divider, Table } from 'antd';
-import Wrapper, { FormWrapper, Title2 } from 'container/Booking/Booking.style';
+import Wrapper, { FormWrapper, Title2 } from 'container/booking/Booking.style';
 import { BOOKING_DETAIL_PAGE } from 'settings/constant';
 import { TextLink } from 'components/index';
 
@@ -12,7 +12,11 @@ const BookingList = () => {
   const URL = 'http://localhost:8080/bookings'
   
   useEffect(() => {
-    axios.get(URL, )
+    if (!localStorage.getItem("token")) {
+      return Promise.reject("No access token set.");
+    }
+    axios.get(URL, { headers: { 'Authorization' : 'Bearer '+localStorage.getItem("token")}
+    })
     .then(resp => {
       setBookingList(resp.data)
     })

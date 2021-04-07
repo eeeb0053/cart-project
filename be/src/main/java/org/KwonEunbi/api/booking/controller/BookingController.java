@@ -32,6 +32,7 @@ public class BookingController extends AbstractController<Booking>{
 	
 	@PostMapping("")
 	public ResponseEntity<Long> save(@RequestBody Booking t) {
+		System.out.println(t.toString());
 		return ResponseEntity.ok(service.save(t));
 	}
 	@PutMapping("/update/{bookNum}")
@@ -62,6 +63,11 @@ public class BookingController extends AbstractController<Booking>{
 		return ResponseEntity.ok(service.delete(t));
 	}
 
+	@DeleteMapping("/{id}")
+	public ResponseEntity<String> deleteId(@PathVariable long id){
+		return ResponseEntity.ok(service.deleteId(id));
+	}
+
 	@GetMapping("/count")
 	public ResponseEntity<Long> count() {
 		return ResponseEntity.ok(service.count());
@@ -70,7 +76,7 @@ public class BookingController extends AbstractController<Booking>{
 	public ResponseEntity<List<Booking>> findAll() {
 		return ResponseEntity.ok(service.findAll());
 	}
-	@GetMapping("/one/{id}")
+	@GetMapping("/{id}")
 	public ResponseEntity<Booking> getOne(@PathVariable long id) {
 		return ResponseEntity.ok(service.getOne(id));
 	}

@@ -11,6 +11,7 @@ import static org.KwonEunbi.api.hall.domain.QHall.hall;
 
 
 import com.querydsl.core.Tuple;
+import lombok.RequiredArgsConstructor;
 import org.KwonEunbi.api.exhibition.domain.ExhbnDTO;
 import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport;
 import org.springframework.stereotype.Repository;
@@ -64,5 +65,4 @@ public class ExhbnRepositoryImpl extends QuerydslRepositorySupport implements Ex
 		System.out.println(list);
 		return null;
 	}
-
 }

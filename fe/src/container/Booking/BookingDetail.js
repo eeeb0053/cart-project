@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { Divider, Col} from 'antd';
-import Wrapper, { TextInfo, Label, Title, Input } from 'container/Booking/Booking.style';
+import Wrapper, { TextInfo, Label, Title, Input } from 'container/booking/Booking.style';
 import { BOOKING_LIST_PAGE } from 'settings/constant'
 
 const BookingDetail = ({match}) => {
@@ -17,10 +17,12 @@ const BookingDetail = ({match}) => {
     setUpdateBooking({...updateBooking, [e.target.name]: e.target.value})
   })
 
+  const history = useHistory();
   const URL = 'http://localhost:8080/bookings/'
 
   useEffect(e => {
-    axios.get(URL+match.params.bookNum, )
+    axios.get(URL+match.params.bookNum, 
+              { headers: { 'Authorization' : 'Bearer '+localStorage.getItem("token")}})
     .then((resp) => {
       setBookingDetail(resp.data)
     })
@@ -35,13 +37,15 @@ const BookingDetail = ({match}) => {
     const del = window.confirm("예매자 정보를 수정하시겠습니까?")
     if(del){
       axios({
-        url: 'http://localhost:8080/bookings/'+match.params.bookNum,
+        url: URL+match.params.bookNum,
         method: 'put',
         headers: {
           'Content-Type'  : 'application/json',
-          'Authorization' : 'JWT fefege..'
+          'Authorization' : 'Bearer '+localStorage.getItem("token")
         },
-        data: updateBooking
+        data: {
+          bookEmail, bookName, bookPnumber
+        }
       })
       .then(resp => {
         alert(`수정되었습니다.`)
@@ -59,19 +63,16 @@ const BookingDetail = ({match}) => {
       const del = window.confirm("예매를 취소하시겠습니까?")
       if(del){
         axios({
-          url: 'http://localhost:8080/bookings',
+          url: URL+match.params.bookNum,
           method: 'delete',
           headers: {
             'Content-Type'  : 'application/json',
-            'Authorization' : 'JWT fefege..'
-          },
-          data: { 
-            bookNum: match.params.bookNum
+            'Authorization' : 'Bearer '+localStorage.getItem("token")
           }
         })
         .then(resp => {
           alert(`예매 취소 완료`)
-          window.location.href = BOOKING_LIST_PAGE
+          history.push(BOOKING_LIST_PAGE)
         })
         .catch(err => {
           alert(`예매 취소가 실패하였습니다.`)
@@ -79,7 +80,7 @@ const BookingDetail = ({match}) => {
         })
       }
   }
-
+ 
   return (
       <Wrapper>
       <Divider />

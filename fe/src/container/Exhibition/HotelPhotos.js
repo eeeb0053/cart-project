@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 import { Button } from 'antd';
 import { DragAndDropUploader, FormControl } from 'components/index';
 import { AddListingAction } from 'container/index';
-import { FormHeader, Title, FormContent, FormAction } from 'container/Exhibition/AddExhibition.style';
+import { FormHeader, Title, FormContent, FormAction } from 'container/exhibition/AddExhibition.style';
 import axios from 'axios'
 
 const HotelPhotos = ({ setStep }) => {

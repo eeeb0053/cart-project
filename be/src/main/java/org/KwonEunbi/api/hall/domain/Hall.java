@@ -11,6 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.KwonEunbi.api.exhibition.domain.Exhbn;
 
@@ -31,9 +32,59 @@ public class Hall {
     @Column(name = "hall_info") private String hallInfo;
     @Column(name = "hall_image") private String hallImage;
 
-    @JsonManagedReference
+    @JsonManagedReference @JsonIgnore
     @OneToMany(mappedBy = "hall")
     private List<Exhbn> exhbnList = new ArrayList<>();
+
+    public void setHallNum(long hallNum) {
+        this.hallNum = hallNum;
+    }
+
+    public void setHallName(String hallName) {
+        this.hallName = hallName;
+    }
+
+    public void setHallLocation(String hallLocation) {
+        this.hallLocation = hallLocation;
+    }
+
+    public void setHallTime(String hallTime) {
+        this.hallTime = hallTime;
+    }
+
+    public void setHallClosed(String hallClosed) {
+        this.hallClosed = hallClosed;
+    }
+
+    public void setHallPnumber(String hallPnumber) {
+        this.hallPnumber = hallPnumber;
+    }
+
+    public void setHallInfo(String hallInfo) {
+        this.hallInfo = hallInfo;
+    }
+
+    public void setHallImage(String hallImage) {
+        this.hallImage = hallImage;
+    }
+
+    public void setExhbnList(List<Exhbn> exhbnList) {
+        this.exhbnList = exhbnList;
+    }
+
+    @Override
+    public String toString() {
+        return "Hall{" +
+                "hallNum=" + hallNum +
+                ", hallName='" + hallName + '\'' +
+                ", hallLocation='" + hallLocation + '\'' +
+                ", hallTime='" + hallTime + '\'' +
+                ", hallClosed='" + hallClosed + '\'' +
+                ", hallPnumber='" + hallPnumber + '\'' +
+                ", hallInfo='" + hallInfo + '\'' +
+                ", hallImage='" + hallImage + '\'' +
+                '}';
+    }
 }
 /*
 create table halls(

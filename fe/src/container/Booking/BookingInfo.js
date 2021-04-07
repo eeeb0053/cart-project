@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Title } from 'container/Booking/Booking.style';
+import { Title } from 'container/booking/Booking.style';
 import { Information } from 'container/index';
 import { Loader } from 'components/index'
 import isEmpty from 'lodash/isEmpty';

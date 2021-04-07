@@ -14,6 +14,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.KwonEunbi.api.exhibition.domain.Exhbn;
 import org.KwonEunbi.api.recommend.domain.Recommend;
@@ -27,19 +28,35 @@ public class Analysis {
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "anal_num") private long analNum;
 
-	@JsonBackReference
+	@JsonBackReference(value = "user")
 	@ManyToOne
 	@JoinColumn(name = "user_num")
 	private UserVO user;
 
-	@JsonBackReference
+	@JsonBackReference(value = "exhbn")
 	@ManyToOne
 	@JoinColumn(name = "exhbn_num")
 	private Exhbn exhbn;
 
-	@JsonManagedReference
+	@JsonManagedReference @JsonIgnore
 	@OneToMany(mappedBy = "analysis")
 	private List<Recommend> recommendList = new ArrayList<>();
+
+	public void setAnalNum(long analNum) {
+		this.analNum = analNum;
+	}
+
+	public void setUser(UserVO user) {
+		this.user = user;
+	}
+
+	public void setExhbn(Exhbn exhbn) {
+		this.exhbn = exhbn;
+	}
+
+	public void setRecommendList(List<Recommend> recommendList) {
+		this.recommendList = recommendList;
+	}
 }
 /*
 create table shows(

@@ -7,6 +7,7 @@ import java.util.Set;
 
 import javax.persistence.*;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.KwonEunbi.api.analysis.domain.Analysis;
 import org.KwonEunbi.api.booking.domain.Booking;
@@ -29,19 +30,85 @@ public class UserVO {
 	@Column(name = "phone_number") private String phoneNumber;
 	@Column(name = "prefer_genre") private String preferGenre;
 
-	@JsonManagedReference
+	@JsonManagedReference @JsonIgnore
 	@OneToMany(mappedBy = "user")
 	private List<Analysis> analysisList = new ArrayList<>();
 
-	@JsonManagedReference
+	@JsonManagedReference @JsonIgnore
 	@OneToMany(mappedBy = "user")
 	private List<Booking> bookingList = new ArrayList<>();
 
-	@JsonManagedReference
+	@JsonManagedReference @JsonIgnore
 	@OneToMany(mappedBy = "user")
 	private List<Review> reviewList = new ArrayList<>();
 
 	@ElementCollection(fetch = FetchType.EAGER)
 	List<Role> roles;
 
+	public void setUserNum(long userNum) {
+		this.userNum = userNum;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public void setBirthday(String birthday) {
+		this.birthday = birthday;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
+	public void setPreferGenre(String preferGenre) {
+		this.preferGenre = preferGenre;
+	}
+
+	public void setAnalysisList(List<Analysis> analysisList) {
+		this.analysisList = analysisList;
+	}
+
+	public void setBookingList(List<Booking> bookingList) {
+		this.bookingList = bookingList;
+	}
+
+	public void setReviewList(List<Review> reviewList) {
+		this.reviewList = reviewList;
+	}
+
+	public void setRoles(List<Role> roles) {
+		this.roles = roles;
+	}
+
+	@Override
+	public String toString() {
+		return "UserVO{" +
+				"userNum=" + userNum +
+				", username='" + username + '\'' +
+				", password='" + password + '\'' +
+				", name='" + name + '\'' +
+				", email='" + email + '\'' +
+				", gender='" + gender + '\'' +
+				", birthday='" + birthday + '\'' +
+				", phoneNumber='" + phoneNumber + '\'' +
+				", preferGenre='" + preferGenre + '\'' +
+				'}';
+	}
 }

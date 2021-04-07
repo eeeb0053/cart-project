@@ -1,12 +1,12 @@
 import React, { useContext, useEffect, useState, useCallback } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { useForm, Controller } from 'react-hook-form';
 import { MdLockOpen } from 'react-icons/md';
 import { Divider, Modal } from 'antd';
 import { FormControl  } from 'components/index';
 import { AuthContext } from 'context/index';
 import { FieldWrapper, SwitchWrapper, Label,  Title, TitleInfo, 
-         Button, Text, Input, Checkbox, A } from 'container/Booking/Booking.style';
+         Button, Text, Input, Checkbox, A } from 'container/booking/Booking.style';
 import { TextField } from '@material-ui/core';
 import { BOOKING_LIST_PAGE } from 'settings/constant'
 import TextInfo from 'components/UI/Text/Text';
@@ -15,31 +15,39 @@ import axios from 'axios';
 
 const BookingForm = ( props ) => {
   const { price, bookdate, tickets } = props;
-  const [addBooking, setAddBooking] = useState({
+  const [ addBooking, setAddBooking ] = useState({
     bookName : "",
     bookEmail : "",
     bookPnumber : ""
   })
-  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [ isModalVisible, setIsModalVisible ] = useState(false);
 
-  const{bookName, bookEmail, bookPnumber} = addBooking
+  const{ bookName, bookEmail, bookPnumber } = addBooking
   const onChange = useCallback(e => {
     setAddBooking({...addBooking, [e.target.name]: e.target.value})
   })
-
+  const history = useHistory();
   const URL = 'http://localhost:8080/bookings'
-
+  
   const booking = e => {
-    axios.post(URL, {
-      bookName, bookEmail, bookPnumber, exhbnNum: props.exhbnNum
+    e.preventDefault()
+    alert(addBooking.bookEmail)
+    const del = window.confirm("예약 하시겠습니까?")
+    if(del){
+    axios({
+      url: URL,
+      method: 'post',
+      headers: {'Content-Type': 'application/json', 'Authorization' : 'Bearer '+localStorage.getItem("token")},
+      data: addBooking
     })
     .then(resp => {
       alert(`예매되었습니다.`)
+      history.push(BOOKING_LIST_PAGE)
     })
     .catch(err => {
       alert(`예약 실패`)
       throw err;
-    })
+    })}
   }
 
   const showModal = () => {
@@ -53,12 +61,6 @@ const BookingForm = ( props ) => {
   const handleCancel = () => {
     setIsModalVisible(false);
   };
-
-  useEffect(() => {
-    alert(price)
-    alert(bookdate)
-    alert(tickets)
-  }, [])
 
   return (
     <form> 

@@ -107,17 +107,12 @@ export const HallImage = styled.div`
 
 export const HallInfo = styled.div`
   width: 100%;
-
-  
-
 `;
 
 export const HallSum = styled.div`
-  
 `;
 
 export const HallBtn = styled.div`
-  
 `;
 
 export default HallWrapper;

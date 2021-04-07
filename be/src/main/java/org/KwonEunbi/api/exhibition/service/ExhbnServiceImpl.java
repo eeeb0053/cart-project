@@ -26,7 +26,7 @@ public class ExhbnServiceImpl extends AbstractService<Exhbn> implements ExhbnSer
 	@Override public Optional<Exhbn> findById(long id) { return exhbnrepository.findById(id);}
 	@Override public boolean existsById(long id) { return exhbnrepository.existsById(id);}
 	@Override public List<Exhbn> findAll() {
-		return exhbnrepository.findAll().stream().sorted(Comparator.comparing(Exhbn::getStartDate)
+		return exhbnrepository.findAll().stream().sorted(Comparator.comparing(Exhbn::getExhbnNum)
 				.reversed()).collect(Collectors.toList());}
 	@Override public Exhbn findByExhbnNum(long exhbnNum) { return exhbnrepository.findByExhbnNum(exhbnNum);}
     @Override public long update(String exhbnTitle, String startDate, String endDate, String exhbnGenre, String exhbnPrice, 

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Row, Col, Modal, Divider } from 'antd';
 import { BookingForm, BookingInfo } from 'container/index';
-import Wrapper from 'container/Booking/Booking.style';
+import Wrapper from 'container/booking/Booking.style';
 const Booking = ( { match } ) => {
 
   return (

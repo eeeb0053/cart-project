@@ -2,7 +2,7 @@ import React, { useState, useCallback } from 'react';
 import { useForm } from 'react-hook-form';
 import { Row, Col, Input, Button } from 'antd';
 import { FormControl } from 'components/index';
-import { FormHeader, Title, FormContent, FormAction } from 'container/Exhibition/AddExhibition.style';
+import { FormHeader, Title, FormContent, FormAction } from 'container/exhibition/AddExhibition.style';
 import DatePicker from "react-datepicker"; 
 import axios from 'axios'
 

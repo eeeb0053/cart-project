@@ -6,7 +6,7 @@ import { Container, Loader } from 'components/index';
 import useWindowSize from 'library/hooks/useWindowSize';
 import { Description, Review, Notice, Additional, Reservation,
          BottomReservation, TopBar, Summary } from 'container/index';
-import SinglePageWrapper, { ButtonBox } from 'container/Exhibition/ExhibitionDetail.style';
+import SinglePageWrapper, { ButtonBox } from 'container/exhibition/ExhibitionDetail.style';
 import isEmpty from 'lodash/isEmpty';
 import axios from 'axios'
 import { useHistory } from 'react-router';
@@ -65,7 +65,6 @@ const SinglePage = ({ match }) => {
 
   return (
     <SinglePageWrapper>
-        { localStorage.getItem("user").admin === '관리자' ?
         <ButtonBox>
           <Link to={ADD_EXHBN_PAGE}>
           <button className="btn">등록</button>
@@ -75,8 +74,6 @@ const SinglePage = ({ match }) => {
           </Link>
           <button className="cancle-btn" onClick={ deleteExhbn }>삭제</button>
         </ButtonBox>
-        : <></>
-        }
       <Container>
         <Row gutter={30}>
           <Col xl={16}>

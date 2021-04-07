@@ -20,10 +20,25 @@ public class Recommend {
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "rec_num") private long recNum;
 
-	@JsonBackReference
+	@JsonBackReference(value = "analysis")
 	@ManyToOne
 	@JoinColumn(name = "anal_num")
 	private Analysis analysis;
+
+	public void setRecNum(long recNum) {
+		this.recNum = recNum;
+	}
+
+	public void setAnalysis(Analysis analysis) {
+		this.analysis = analysis;
+	}
+
+	@Override
+	public String toString() {
+		return "Recommend{" +
+				"recNum=" + recNum +
+				'}';
+	}
 }
 /*
 create table shows(

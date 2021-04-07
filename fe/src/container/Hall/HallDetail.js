@@ -7,7 +7,7 @@ import useWindowSize from 'library/hooks/useWindowSize';
 import useDataApi from 'library/hooks/useDataApi';
 import isEmpty from 'lodash/isEmpty';
 import { HallInformation, VerticalTab } from 'container/index';
-import HallPageWrapper from 'container/Hall/HallDetail.style';
+import HallPageWrapper from 'container/hall/HallDetail.style';
 import axios from 'axios'
 
 const HallDetail = ({ match }) => {

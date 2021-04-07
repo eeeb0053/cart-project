@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import VerticalWrapper from 'container/Hall/VerticalTab/VerticalTab.style';
+import VerticalWrapper from 'container/hall/VerticalTab/VerticalTab.style';
 import { HALL_DETAIL_PAGE } from 'settings/constant';
 
 const VerticalTab = (props) => {
