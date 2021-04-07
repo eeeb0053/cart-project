@@ -44,7 +44,8 @@ public class ExhbnRepositoryImpl extends QuerydslRepositorySupport implements Ex
 	@Override
 	public List<Exhbn> nowInExhbn(){
 		Date nowDate = new Date();
-		return qf.selectFrom(exhbn).where(exhbn.startDate.before(nowDate), exhbn.endDate.after(nowDate)).fetch();
+		return qf.selectFrom(exhbn).where(exhbn.startDate.before(nowDate), exhbn.endDate.after(nowDate))
+				.orderBy(exhbn.startDate.desc()).fetch();
 	}
 
 	@Override
@@ -55,7 +56,7 @@ public class ExhbnRepositoryImpl extends QuerydslRepositorySupport implements Ex
 
 	@Override
 	public List<Exhbn> findByHall(long id){
-		return qf.selectFrom(exhbn).join(exhbn.hall, hall).on(hall.hallNum.eq(id)).fetch();
+		return qf.selectFrom(exhbn).where(hall.hallNum.eq(id)).fetch();
 	}
 
 	@Override

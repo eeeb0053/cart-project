@@ -12,17 +12,28 @@ import { BOOKING_LIST_PAGE } from 'settings/constant'
 import TextInfo from 'components/UI/Text/Text';
 import { Consent } from 'container/index';
 import axios from 'axios';
+import Moment from 'moment';
+import 'moment/locale/ko'
 
-const BookingForm = ( props ) => {
-  const { price, bookdate, tickets } = props;
+const BookingForm = () => {
+  const bookingDate = sessionStorage.getItem("bookDate")
+  const tickets = sessionStorage.getItem("tickets")
+  const price = sessionStorage.getItem("price")
+  let totalprice = useState('')
+  { price === '무료' ? totalprice = '0원' :
+          totalprice = (price*tickets).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')+'원'}
+
   const [ addBooking, setAddBooking ] = useState({
     bookName : "",
     bookEmail : "",
-    bookPnumber : ""
+    bookPnumber : "",
+    totalPrice : totalprice,
+    bookDate : new Date,
+    bookTickets : tickets+'매'
   })
   const [ isModalVisible, setIsModalVisible ] = useState(false);
 
-  const{ bookName, bookEmail, bookPnumber } = addBooking
+  const { bookName, bookEmail, bookPnumber, bookDate } = addBooking
   const onChange = useCallback(e => {
     setAddBooking({...addBooking, [e.target.name]: e.target.value})
   })
@@ -31,7 +42,8 @@ const BookingForm = ( props ) => {
   
   const booking = e => {
     e.preventDefault()
-    alert(addBooking.bookEmail)
+    setAddBooking({...addBooking, bookDate: bookingDate})
+    alert(addBooking.bookTickets)
     const del = window.confirm("예약 하시겠습니까?")
     if(del){
     axios({
@@ -42,6 +54,9 @@ const BookingForm = ( props ) => {
     })
     .then(resp => {
       alert(`예매되었습니다.`)
+      sessionStorage.removeItem("bookDate")
+      sessionStorage.removeItem("tickets")
+      sessionStorage.removeItem("price")
       history.push(BOOKING_LIST_PAGE)
     })
     .catch(err => {
@@ -82,11 +97,10 @@ const BookingForm = ( props ) => {
           onChange = {onChange}/>
       </div><br/>
         <Label>예매정보</Label>
-        <TitleInfo> {bookdate} 2021-03-15 (월), 총 1매 - 대인 1매</TitleInfo>
+        <TitleInfo> {Moment(bookDate).lang("ko").format('YYYY-MM-DD (ddd)')}, 총 {tickets}매</TitleInfo>
         <Divider/>
         <Text>합계</Text>
-        <TitleInfo>{price === '무료' ? '0원' :
-               (price*tickets).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')+'원'}</TitleInfo>
+        <TitleInfo>{totalprice}</TitleInfo>
         <br/>
         <Checkbox type="checkbox" id="check" className="checkbox"/>
         <label htmlFor="check"> 예약 서비스 이용을 위한
@@ -97,10 +111,9 @@ const BookingForm = ( props ) => {
         </Modal>
         을 확인하였으며 이에 동의합니다.</label>
         <br/><br/>
-      <Link to={BOOKING_LIST_PAGE}>
       <Button type="button" onClick={booking}>
           예매하기
-      </Button></Link>
+      </Button>
     </form>
   );
 };

@@ -5,6 +5,7 @@ import { Heading, Text, Rating } from 'components/index';
 import InformationWrapper, { Info, Img } from 'container/common/SinglePage/Information/Information.style';
 import { RatingMeta } from 'container/exhibition/ExhibitionDetail.style';
 import Moment from 'moment';
+import 'moment/locale/ko'
 
 const Information = ({
   title,
@@ -36,7 +37,8 @@ const Information = ({
                price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')+'원'}</span></li><br />
               <li><strong>장소</strong> <span>{location}</span></li><br />
               <li><strong>기간</strong> <span>
-              {Moment({startDate}).format('YYYY-MM-DD')} ~ {Moment({endDate}).format('YYYY-MM-DD')}
+              {Moment({startDate}).lang("ko").format('YYYY-MM-DD (ddd)')} 
+                ~ {Moment({endDate}).lang("ko").format('YYYY-MM-DD (ddd)')}
               </span></li><br />
           </ul>
           </Info>

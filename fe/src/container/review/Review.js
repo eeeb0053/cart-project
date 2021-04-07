@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { IoIosStar, IoIosStarOutline, IoIosArrowDown } from 'react-icons/io';
 import { Row, Col, Button, Input, Checkbox, Divider, Modal } from 'antd';
 import { CommentCard, Heading, Text } from 'components/index';
-import { ReviewForm } from 'container/index';
+import { ReviewForm, UpdateReview } from 'container/index';
 import ReviewWrapper, {
   HeaderSection,
   RatingStatus,
@@ -19,12 +19,14 @@ import axios from 'axios';
 const Search = Input.Search;
 const CommentBox = ( props ) => {
   const { reviews } = props;
+
   return reviews && reviews.length !== 0
     ? reviews.map((singleReview, i) => {
         return (
           <Fragment key={i}>
             <Divider />
             <CommentCard singleReview={singleReview} />
+            <UpdateReview singleReview={singleReview}/>
           </Fragment>
         );
       })
@@ -46,7 +48,11 @@ const Review = (props) => {
     language: false,
   });
   const handleModalOpen = (key) => {
-    setState({ ...state, [key]: true });
+    { localStorage.getItem("token") != null ? 
+      setState({ ...state, [key]: true })
+    : 
+      alert('로그인 후 작성 가능합니다.')
+    }
   };
   const handleModalClose = (key) => {
     setState({ ...state, [key]: false });
@@ -99,7 +105,7 @@ const Review = (props) => {
               maskStyle={{ backgroundColor: 'rgba(255, 255, 255, 0.9)' }}
               wrapClassName="review_modal"
             >
-              <ModalTitle>감상평을 작성해주세요</ModalTitle>
+              <ModalTitle>리뷰를 작성해주세요</ModalTitle>
               <ReviewForm />
             </Modal>
           </RatingSearch>

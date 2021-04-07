@@ -4,6 +4,8 @@ import { Divider, Table } from 'antd';
 import Wrapper, { FormWrapper, Title2 } from 'container/booking/Booking.style';
 import { BOOKING_DETAIL_PAGE } from 'settings/constant';
 import { TextLink } from 'components/index';
+import Moment from 'moment';
+import 'moment/locale/ko'
 
 const BookingList = () => {
 
@@ -47,11 +49,17 @@ const BookingList = () => {
       title: '예약일자',
       dataIndex: 'bookDate',
       key: 'bookDate',
+      render: Date => Moment(Date).lang("ko").format('YYYY-MM-DD (ddd)')
     },
     {
       title: '합계',
       dataIndex: 'totalPrice',
-      key: 'totalPrice',
+      key: 'totalPrice'
+    },
+    {
+      title: '매수',
+      dataIndex: 'bookTickets',
+      key: 'bookTickets'
     },
   ];
   

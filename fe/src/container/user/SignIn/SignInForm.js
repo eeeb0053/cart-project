@@ -47,13 +47,13 @@ const SignInForm = () => {
       if (response.data.token) {
         localStorage.setItem("user", JSON.stringify(response.data.user));
         localStorage.setItem("token", response.data.token);
-        history.push(HOME_PAGE)
+        history.goBack()
       } else{
         alert(`토큰값이 없습니다.`)
       }
     })
     .catch(error => {
-      alert(error)
+      alert(`아이디 혹은 비밀번호가 일치하지 않습니다.`)
     });
   }
 

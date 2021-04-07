@@ -32,6 +32,8 @@ public class QBooking extends EntityPathBase<Booking> {
 
     public final StringPath bookPnumber = createString("bookPnumber");
 
+    public final StringPath bookTickets = createString("bookTickets");
+
     public final org.KwonEunbi.api.exhibition.domain.QExhbn exhbn;
 
     public final StringPath totalPrice = createString("totalPrice");

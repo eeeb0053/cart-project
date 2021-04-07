@@ -1,6 +1,7 @@
 import React, { useState, useStyles, useEffect, useRef } from 'react';
 import { Button } from 'antd';
 import { HtmlLabel, InputIncDec } from 'components/index';
+import { Booking } from 'container/index';
 import ReservationFormWrapper, {
   FormActionArea,
   FieldWrapper,
@@ -13,7 +14,7 @@ import "react-datepicker/dist/react-datepicker.css";
 
 
 const RenderReservationForm = ( props ) => {
-  const [bookdate, setBookdate] = useState(new Date());
+  const [bookDate, setBookDate] = useState(new Date());
   const [tickets, setTickets] = useState(0);
   const history = useHistory();
 
@@ -35,11 +36,12 @@ const RenderReservationForm = ( props ) => {
   };
   const onClick = e => {
     e.preventDefault();
+    sessionStorage.setItem("tickets", tickets)
+    sessionStorage.setItem("bookDate", bookDate)
     { localStorage.getItem("token") !== null ? 
       history.push(`${BOOKING_PAGE}/${props.number}`)
     :
       alert(`로그인 후에 이용 가능합니다.`)
-      history.push(LOGIN_PAGE)
     }
   }
 
@@ -49,8 +51,8 @@ const RenderReservationForm = ( props ) => {
         <HtmlLabel htmlFor="dates" content="날짜" />
         <DatePicker
           dateFormat="yyyy-MM-dd"
-          selected={bookdate}
-          onChange={date => setBookdate(date)}
+          selected={bookDate}
+          onChange={date => setBookDate(date)}
           minDate={new Date()}
         />
       </FieldWrapper>
@@ -59,8 +61,8 @@ const RenderReservationForm = ( props ) => {
                 <strong>매수</strong>
                 <InputIncDec
                   id="adult"
-                  increment={handleIncrement}
-                  decrement={handleDecrement}
+                  increment={() => handleIncrement(tickets)}
+                  decrement={() => handleDecrement(tickets)}
                   onChange={handleIncDecOnChange}
                   value={tickets}
                 />
@@ -68,7 +70,6 @@ const RenderReservationForm = ( props ) => {
       </FieldWrapper>
       <FormActionArea>
         <Button htmlType="submit" type="primary" 
-                tickets={tickets} bookDate={bookdate} price={props.price}
                 onClick = {onClick}>
           예매하기
         </Button>

@@ -5,6 +5,7 @@ import { Heading, Rating, Favorite, FaceBookShare, TwitterShare } from 'componen
 import { RatingMeta } from 'container/exhibition/ExhibitionDetail.style';
 import { Button, Menu, Dropdown } from 'antd';
 import Moment from 'moment';
+import 'moment/locale/ko'
 
 const SocialShareMenu = ( props) => {
 
@@ -66,7 +67,8 @@ return (
                 <ul>
                     <li><strong>장소</strong> <span>{location}</span></li>
                     <li><strong>기간</strong> <span>
-                    {Moment({startDate}).format('YYYY-MM-DD')} ~ {Moment({endDate}).format('YYYY-MM-DD')}
+                    {Moment({startDate}).lang("ko").format('YYYY-MM-DD (ddd)')} 
+                    ~ {Moment({endDate}).lang("ko").format('YYYY-MM-DD (ddd)')}
                       </span></li>
                     <li><strong>가격</strong> <span>
                       {price === '무료' || price === '' ? '무료' :

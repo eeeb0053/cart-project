@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -33,6 +34,23 @@ public class ReviewController extends AbstractController<Review>{
 	@DeleteMapping("")
 	public ResponseEntity<Long> delete(@RequestBody Review t) {
 		return ResponseEntity.ok(service.delete(t));
+	}
+	@DeleteMapping("/{id}")
+	public ResponseEntity<String> deleteById(@PathVariable long id){
+		return ResponseEntity.ok(service.deleteById(id));
+	}
+	@PutMapping("/{id}")
+	public ResponseEntity<String> update(@PathVariable long id, @RequestBody Review review){
+		Review r = service.getOne(id);
+		if(!(review.getReviewContent().equals(r.getReviewContent()) ||
+				review.getReviewContent().equals(""))) {
+			r.setReviewContent(review.getReviewContent());
+		}
+		if(!(review.getScore().equals(r.getScore()) ||
+				review.getScore().equals("0"))) {
+			r.setScore(review.getScore());
+		}
+		return ResponseEntity.ok(service.update(r));
 	}
 	@GetMapping("/count")
 	public ResponseEntity<Long> count() {

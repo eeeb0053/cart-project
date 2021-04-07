@@ -33,6 +33,7 @@ public class Booking {
 	@Column(name = "book_name") private String bookName;
 	@Column(name = "book_email") private String bookEmail;
 	@Column(name = "book_pnumber") private String bookPnumber;
+	@Column(name = "book_tickets") private String bookTickets;
 
 	@JsonBackReference(value = "user")
 	@ManyToOne
@@ -67,6 +68,8 @@ public class Booking {
 	public void setBookPnumber(String bookPnumber) {
 		this.bookPnumber = bookPnumber;
 	}
+
+	public void setBookTickets(String bookTickets) { this.bookTickets = bookTickets; }
 
 	@Override
 	public String toString() {

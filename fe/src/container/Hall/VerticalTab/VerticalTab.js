@@ -1,21 +1,29 @@
-import React, { Component } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import VerticalWrapper from 'container/hall/VerticalTab/VerticalTab.style';
 import { HALL_DETAIL_PAGE } from 'settings/constant';
+import axios from 'axios';
 
 const VerticalTab = (props) => {
-    
+    const [ hall, setHall ] = useState([])
+    useEffect(()=> {
+        const URL = 'http://localhost:8080/halls'
+        axios.get(URL,)
+        .then(resp => {
+            setHall(resp.data)
+        })
+        .catch(err => {
+            alert(err)
+        })
+    }, [])
+    const hallList = hall.map((data) => (                   
+        <li><a href={`${HALL_DETAIL_PAGE}/${data.hallNum}`}>{data.hallName}</a></li>
+    ))
     return (
         <VerticalWrapper>
-            <nav class="vertab">
+            <nav className="vertab">
                 <ul>
-                    <li><a href={`${HALL_DETAIL_PAGE}/${1}`}>서소문본관</a></li>
-                    <li><a href={`${HALL_DETAIL_PAGE}/${2}`}>북서울미술관</a></li>
-                    <li><a href={`${HALL_DETAIL_PAGE}/${3}`}>남서울미술관</a></li>
-                    <li><a href={`${HALL_DETAIL_PAGE}/${4}`}>난지미술창작스튜디오</a></li>
-                    <li><a href={`${HALL_DETAIL_PAGE}/${5}`}>SeMA창고</a></li>
-                    <li><a href={`${HALL_DETAIL_PAGE}/${6}`}>백남준기념관</a></li>
-                    <li><a href={`${HALL_DETAIL_PAGE}/${7}`}>SeMA벙커</a></li>
+                    { hallList }
                 </ul>
             </nav>
         </VerticalWrapper>

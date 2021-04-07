@@ -131,7 +131,7 @@ export const Title = styled.h2`
 
 export const Title2 = styled.h2`
   color: ${themeGet('text.4', '#777777')};
-  font-size: 22px;
+  font-size: 20px;
   line-height: 54px;
   font-weight: 700;
   margin-bottom: 0;

@@ -1,6 +1,10 @@
 package org.KwonEunbi.api.booking.controller;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 import java.util.Optional;
 
 import lombok.RequiredArgsConstructor;
@@ -32,7 +36,6 @@ public class BookingController extends AbstractController<Booking>{
 	
 	@PostMapping("")
 	public ResponseEntity<Long> save(@RequestBody Booking t) {
-		System.out.println(t.toString());
 		return ResponseEntity.ok(service.save(t));
 	}
 	@PutMapping("/update/{bookNum}")

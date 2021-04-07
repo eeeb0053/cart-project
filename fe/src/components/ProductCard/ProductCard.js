@@ -7,6 +7,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import GridCard from 'components/GridCard/GridCard';
 import Moment from 'moment';
+import 'moment/locale/ko'
 
 const responsive = {
   desktop: {
@@ -59,7 +60,8 @@ const PostGrid = ({
       }
       title={<TextLink link={`exhbns/${exhbnNum}`} content={exhbnTitle}/>}
       location={`${hallLocation}`}
-      date={`${Moment(startDate).format('YYYY-MM-DD')} ~ ${Moment(endDate).format('YYYY-MM-DD')}`}
+      date={`${Moment(startDate).lang("ko").format('YYYY-MM-DD (ddd)')} 
+              ~ ${Moment(endDate).lang("ko").format('YYYY-MM-DD (ddd)')}`}
       rating={<Rating rating={rating} ratingCount={ratingCount} type="bulk" />}
     >
       <Carousel

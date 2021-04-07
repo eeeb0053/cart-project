@@ -1,8 +1,7 @@
 import React, { useState, Fragment, useEffect } from 'react';
 import axios from 'axios';
 import Sticky from 'react-stickynode';
-import { Toolbar, CategorySearch, PostPlaceholder, SectionGrid, FilterDrawer } from 'components/index';
-import { Checkbox } from 'antd';
+import { Toolbar, CategorySearch, PostPlaceholder, SectionGrid, FilterDrawer, SectionTitle, Heading } from 'components/index';
 import useWindowSize from 'library/hooks/useWindowSize';
 import useDataApi from 'library/hooks/useDataApi';
 import { EXHBN_DETAIL_PAGE } from 'settings/constant';
@@ -16,10 +15,8 @@ const SearchListing = ({ location, history }) => {
   let columnWidth = [1 / 1, 1 / 2, 1 / 3, 1 / 4, 1 / 5];
 
   useEffect(() => {
-    // alert(localStorage.getItem('exhbnTitle'))
     axios.get("http://localhost:8080/exhbns/search/"+localStorage.getItem('exhbnTitle'), 
     ).then(resp => {
-      // alert(`성공`)
       setExhbn(resp.data)
     }).catch(err => {
       alert(`err`)
@@ -41,7 +38,7 @@ const SearchListing = ({ location, history }) => {
           }
         />
       </Sticky>
-
+      { exhbn.length != 0 ? 
       <Fragment>
         <PostsWrapper className={width > 767 }>
           <SectionGrid
@@ -56,6 +53,11 @@ const SearchListing = ({ location, history }) => {
           />
         </PostsWrapper>
       </Fragment>
+      :
+      <Fragment>
+        <h2>검색 결과가 없습니다.</h2>
+      </Fragment>
+      }
     </ListingWrapper>
     </>
   );

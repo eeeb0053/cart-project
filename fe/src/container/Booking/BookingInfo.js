@@ -7,7 +7,7 @@ import axios from 'axios';
 
 const BookingInfo = ( props ) => {
 
-  const [ exhbnDetail, setexhbnDetail ] = useState([])
+  const [ exhbnDetail, setExhbnDetail ] = useState([])
   const [ props2 ] = useState([])
 
   const URL = `http://localhost:8080/exhbns/one/` 
@@ -15,15 +15,14 @@ const BookingInfo = ( props ) => {
   useEffect(() => {
     axios.get(URL+props.exhbnNum)
     .then(reps => {
-      setexhbnDetail(reps.data)
+      setExhbnDetail(reps.data)
+
     })
     .catch(err => {
       alert(`실패`)
       throw err;
     })
   }, [])
-
-  // const { data, loading } = useDataApi(`http://localhost:8080/exhbns`);
 
   if (isEmpty(exhbnDetail)) return <Loader />;
   

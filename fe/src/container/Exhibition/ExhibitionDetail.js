@@ -32,8 +32,9 @@ const SinglePage = ({ match }) => {
       alert(`전시 상세페이지 실패`)
       throw err;
     })
-
   }, [])
+
+  sessionStorage.setItem("price", exhbnDetail.exhbnPrice)
 
   if (isEmpty(exhbnDetail)) return <Loader />;
   

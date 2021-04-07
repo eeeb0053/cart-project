@@ -24,7 +24,6 @@ const HallListing = ({match}) => {
       alert(err)
       throw err
     })
-    alert(exhbnByHall.hallLocation)
   }, [])
 
   return (

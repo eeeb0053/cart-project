@@ -49,6 +49,8 @@ export {default as BottomReservation} from 'container/common/SinglePage/Reservat
 export {default as RenderReservationForm} from 'container/common/SinglePage/Reservation/RenderReservationForm'
 export {default as Reservation} from 'container/common/SinglePage/Reservation/Reservation'
 export {default as Review} from 'container/review/Review'
+export {default as UpdateReview} from 'container/review/UpdateReview'
+export {default as CommentCard} from 'container/review/CommentCard/CommentCard'
 export {default as ReviewForm} from 'container/review/ReviewForm'
 export {default as Summary} from 'container/common/SinglePage/Summary/Summary'
 export {default as TopBar} from 'container/common/SinglePage/TopBar/TopBar'

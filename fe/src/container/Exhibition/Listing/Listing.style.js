@@ -4,6 +4,20 @@ import { themeGet } from '@styled-system/theme-get';
 const ListingWrapper = styled.div`
   position: relative;
 
+  h2 {
+    color: ${themeGet('text.0', '#2C2C2C')};
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-left: 30px;
+    margin-top: 30px;
+
+    @media (max-width: 480px) {
+      font-size: 17px;
+      line-height: 21px;
+    }
+  }
+
   /* checkbox group component style */
   .ant-checkbox-group {
     .ant-checkbox-group-item {

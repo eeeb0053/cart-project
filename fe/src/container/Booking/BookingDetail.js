@@ -4,6 +4,8 @@ import { Link, useHistory } from 'react-router-dom';
 import { Divider, Col} from 'antd';
 import Wrapper, { TextInfo, Label, Title, Input } from 'container/booking/Booking.style';
 import { BOOKING_LIST_PAGE } from 'settings/constant'
+import Moment from 'moment';
+import 'moment/locale/ko';
 
 const BookingDetail = ({match}) => {
 
@@ -91,9 +93,11 @@ const BookingDetail = ({match}) => {
         <Label>전시명</Label>
         <TextInfo> {bookingDetail.exhbnNum} </TextInfo>
         <Label>예약일</Label>
-        <TextInfo> {bookingDetail.bookDate} </TextInfo>
+        <TextInfo> {Moment(bookingDetail.bookDate).lang('ko').format('YYYY-MM-DD (ddd)')} </TextInfo>
         <Label>결제금액</Label>
         <TextInfo> {bookingDetail.totalPrice} </TextInfo>
+        <Label>매수</Label>
+        <TextInfo> {bookingDetail.bookTickets} </TextInfo>
         </Col>
         <Col xl={5}>
         <div>

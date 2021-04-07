@@ -17,4 +17,5 @@ public class BookingDTO {
 	private String bookName;
 	private String bookEmail;
 	private String bookPnumber;
+	private String bookTickets;
 }
