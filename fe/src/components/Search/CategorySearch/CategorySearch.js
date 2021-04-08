@@ -11,7 +11,7 @@ import {
   getPropertyType,
 } from 'components/Search/SearchParams';
 import CategroySearchWrapper, {
-  RoomGuestWrapper,
+  TicketsWrapper,
   ItemWrapper,
   ActionWrapper,
 } from 'components/Search/CategorySearch/CategorySearch.style';
@@ -54,7 +54,7 @@ const CategotySearch = ({ history, location }) => {
     });
   };
 
-  const handleRoomGuestApply = () => {
+  const handleTicketsApply = () => {
     const query = {
       ...state,
       room: countRoom,
@@ -67,7 +67,7 @@ const CategotySearch = ({ history, location }) => {
     });
   };
 
-  const handleRoomGuestCancel = () => {
+  const handleTicketsCancel = () => {
     setRoom(0);
     setGuest(0);
     const query = {

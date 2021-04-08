@@ -25,5 +25,6 @@ public class UserDTO{
 	private String birthday;
 	private String phoneNumber;
 	private String preferGenre;
+	private String admin;
 
 }

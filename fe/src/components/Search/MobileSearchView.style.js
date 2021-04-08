@@ -10,7 +10,7 @@ const fadeIn = keyframes`
   }
 `;
 
-export const RoomGuestWrapper = styled.div`
+export const TicketsWrapper = styled.div`
   width: 100%;
   max-width: 320px;
   @media (max-width: 480px) {

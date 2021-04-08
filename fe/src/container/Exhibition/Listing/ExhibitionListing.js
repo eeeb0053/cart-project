@@ -13,7 +13,7 @@ const Listing = ({ location, history }) => {
   const [exhbnList, setExhbnList] = useState([])
 
   const { width } = useWindowSize();
-  const { data, loading, loadMoreData, total, limit } = useDataApi('http://localhost:8080/exhbns/all');
+  const { data, loading, loadMoreData, total, limit } = useDataApi('http://localhost:8080/exhbns/now');
   let columnWidth = [1 / 1, 1 / 2, 1 / 3, 1 / 4, 1 / 5];
 
   return (

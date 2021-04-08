@@ -30,7 +30,7 @@ const {
   titleStyle,
   media,
   location,
-  startDate, endDate, genre, price, artist}
+  start, end, genre, price, artist}
 = props;
 
 return (
@@ -67,8 +67,8 @@ return (
                 <ul>
                     <li><strong>장소</strong> <span>{location}</span></li>
                     <li><strong>기간</strong> <span>
-                    {Moment({startDate}).lang("ko").format('YYYY-MM-DD (ddd)')} 
-                    ~ {Moment({endDate}).lang("ko").format('YYYY-MM-DD (ddd)')}
+                    {Moment(start).lang("ko").format('YYYY-MM-DD (ddd)')} 
+                    ~ {Moment(end).lang("ko").format('YYYY-MM-DD (ddd)')}
                       </span></li>
                     <li><strong>가격</strong> <span>
                       {price === '무료' || price === '' ? '무료' :

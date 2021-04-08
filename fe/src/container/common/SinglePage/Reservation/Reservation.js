@@ -1,16 +1,15 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { Card, Heading, Text, TextLink } from 'components/index';
+import { Card, Heading, Text } from 'components/index';
 import { RenderReservationForm } from 'container/index';
 
-const CardHeader = ({ price, priceStyle, pricePeriodStyle, linkStyle }) => {
+const CardHeader = ({ price, priceStyle, pricePeriodStyle, }) => {
   return (
     <Fragment>
       <Heading
         content={
           <Fragment>
-            {price === '무료' || price === '' ? '무료' :
-            price.replace(/\B(?=(\d{3})+(?!\d))/g, ',')+'원'}
+            {price}
             <Text as="span" content="/ 1매" {...pricePeriodStyle} />
           </Fragment>
         }

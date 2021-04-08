@@ -10,21 +10,21 @@ const { Dragger } = Upload;
 const photos = [
   {
     uid: '1',
-    name: 'hotel-1.png',
+    name: 'exhibition-1.png',
     status: 'done',
     url:
       'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
   },
   {
     uid: '2',
-    name: 'hotel-2.png',
+    name: 'exhibition-2.png',
     status: 'done',
     url:
       'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
   },
   {
     uid: '3',
-    name: 'hotel-3.png',
+    name: 'exhibition-3.png',
     status: 'done',
     url:
       'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',

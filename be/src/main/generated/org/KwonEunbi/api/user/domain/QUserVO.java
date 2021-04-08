@@ -20,6 +20,8 @@ public class QUserVO extends EntityPathBase<UserVO> {
 
     public static final QUserVO userVO = new QUserVO("userVO");
 
+    public final StringPath admin = createString("admin");
+
     public final ListPath<org.KwonEunbi.api.analysis.domain.Analysis, org.KwonEunbi.api.analysis.domain.QAnalysis> analysisList = this.<org.KwonEunbi.api.analysis.domain.Analysis, org.KwonEunbi.api.analysis.domain.QAnalysis>createList("analysisList", org.KwonEunbi.api.analysis.domain.Analysis.class, org.KwonEunbi.api.analysis.domain.QAnalysis.class, PathInits.DIRECT2);
 
     public final StringPath birthday = createString("birthday");

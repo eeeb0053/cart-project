@@ -5,23 +5,28 @@ import { FormControl } from 'components/index';
 import { FormHeader, Title, FormContent, FormAction } from 'container/exhibition/AddExhibition.style';
 import DatePicker from "react-datepicker"; 
 import axios from 'axios'
+import { EXHBN_LIST_PAGE } from 'settings/constant'
+import { useHistory } from 'react-router'
 
 const AddExhibition = ( )  => {
   const { errors } = useForm();
-
-  const [ addExhbn, setAddExhibition ] = useState({
+  const history = useHistory();
+  const [ addExhbn, setAddExhbn ] = useState({
     exhbnTitle: "", hallLocation: "", startDate: new Date(), endDate: new Date(), exhbnGenre: "",
     exhbnPrice: "", exhbnArtist: "", exhbnContent: "", exhbnImage: ""
   })
   const { exhbnTitle, hallLocation, startDate, endDate, exhbnGenre, 
           exhbnPrice, exhbnArtist, exhbnContent, exhbnImage } = addExhbn
-  
+  const [ startdate, setStartdate ] = useState(new Date())
+  const [ enddate, setEnddate ] = useState(new Date())
   const onChange = useCallback(e => {
-    setAddExhibition({...addExhbn, [e.target.name]: e.target.value})
+    setAddExhbn({...addExhbn, [e.target.name]: e.target.value})
   })
   const URL = 'http://localhost:8080'
   const add = e => {
     e.preventDefault()
+    setAddExhbn({...addExhbn, startDate: startdate})
+    setAddExhbn({...addExhbn, endDate: enddate})
     const del = window.confirm("전시회를 등록하시겠습니까?")
     if(del){
     axios({
@@ -35,14 +40,14 @@ const AddExhibition = ( )  => {
     }) 
     .then(resp => {
       alert(`전시 등록 완료`)
-      window.location.reload()
+      history.push(EXHBN_LIST_PAGE)
     })
     .catch(err => {
       alert(`전시 등록 실패`)
       throw err;
     })}
   }
-
+ 
   return (
     <form onSubmit={e => e.preventDefault()}>
       <FormContent>
@@ -57,7 +62,7 @@ const AddExhibition = ( )  => {
               // error={errors.exhbnImage && <span>이 입력란을 작성해주세요!</span>}
               >
             <input name="exhbnImage" value={exhbnImage}
-                   type="file" accept="image/*" required
+                   type="file" accept="image/*" 
                    onChange = { onChange } />     
             </FormControl>
           </Col>
@@ -67,11 +72,12 @@ const AddExhibition = ( )  => {
             <FormControl
               label="제목"
               htmlFor="exhbnTitle"
+              
               // error={errors.exhbnTitle && <span>이 입력란을 작성해주세요!</span>}
             >
             <Input name="exhbnTitle" value={exhbnTitle} id="exhbnTitle" 
-                   placeholder="전시 제목을 입력해주세요." required
-                   onChange = { onChange }/>
+                   placeholder="전시 제목을 입력해주세요." 
+                   onChange = { onChange }  required="required"/>
             </FormControl>
           </Col>
         </Row>
@@ -99,9 +105,8 @@ const AddExhibition = ( )  => {
               name="startDate"
               // value={startDate}
               dateFormat="yyyy-MM-dd"
-              selected={startDate}
-              onChange={onChange}
-              minDate={new Date()}
+              selected={startdate}
+              onChange={date => setStartdate(date)}
             />
             </FormControl>
           </Col>
@@ -117,9 +122,9 @@ const AddExhibition = ( )  => {
               name="endDate"
               // value={startDate}
               dateFormat="yyyy-MM-dd"
-              selected={endDate}
-              onChange={onChange}
-              minDate={new Date()}
+              selected={enddate}
+              onChange={date => setEnddate(date)}
+              minDate={startdate}
             />
             </FormControl>
           </Col>
@@ -144,9 +149,14 @@ const AddExhibition = ( )  => {
               htmlFor="exhbnGenre"
               // error={errors.exhbnGenre && <span>이 입력란을 작성해주세요!</span>}
             >
-            <Input id="exhbnGenre" name="exhbnGenre" value={exhbnGenre} 
-                   placeholder="전시 장르를 입력해주세요." required
-                   onChange = { onChange }/>   
+          <select name="exhbnGenre" value={exhbnGenre} onChange={ onChange }>
+            <option value="selection">선택</option>
+            <option value="painting">회화</option>
+            <option value="media">미디어</option>
+            <option value="sculpture">조각</option>
+            <option value="craft">공예</option>
+            <option value="installation">설치</option>
+          </select>  
             </FormControl>
           </Col>
         </Row>

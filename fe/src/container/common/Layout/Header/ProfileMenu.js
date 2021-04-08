@@ -36,7 +36,7 @@ const ProfileMenu = ({ avatar, history }) => {
           <NavLink to={USER_PROFILE_PAGE}>View Profile</NavLink>
         </Menu.Item>
         <Menu.Item onClick={() => closeDropdown()} key="1">
-          <NavLink to={ADD_EXHBN_PAGE}>Add Hotel</NavLink>
+          <NavLink to={ADD_EXHBN_PAGE}>Add Exhibition</NavLink>
         </Menu.Item>
         <Menu.Item onClick={() => closeDropdown()} key="2">
           <NavLink to={USER_ACCOUNT_SETTINGS_PAGE}>Account Settings</NavLink>

@@ -18,11 +18,9 @@ const VerticalWrapper = styled.div`
     color: inherit;
     font-weight: bold;
   }
-
   .vertab {
     text-align: center;
     position: fixed;
-
   }
   .vertab>ul {
     display: inline-block;
@@ -33,17 +31,16 @@ const VerticalWrapper = styled.div`
   }
   .vertab>ul>li>a {
     display: block;
-    padding: 15px 35px;
+    padding: 1rem 2rem;
   }
   .vertab>ul>li:hover>a {
     color: white;
-    background-color: black;
+    background-color: #302f2f;
   }
  
 `;
 
 export const TabWrapper = styled.div`
-
 `;
 
 export default VerticalWrapper;

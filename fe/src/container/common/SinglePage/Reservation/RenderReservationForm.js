@@ -58,14 +58,14 @@ const RenderReservationForm = ( props ) => {
       </FieldWrapper>
       <FieldWrapper>
         <ItemWrapper>
-                <strong>매수</strong>
-                <InputIncDec
-                  id="adult"
-                  increment={() => handleIncrement(tickets)}
-                  decrement={() => handleDecrement(tickets)}
-                  onChange={handleIncDecOnChange}
-                  value={tickets}
-                />
+          <HtmlLabel htmlFor="dates" content="매수" />
+          <InputIncDec
+            id="adult"
+            increment={() => handleIncrement(tickets)}
+            decrement={() => handleDecrement(tickets)}
+            onChange={handleIncDecOnChange}
+            value={tickets}
+          />
          </ItemWrapper>
       </FieldWrapper>
       <FormActionArea>

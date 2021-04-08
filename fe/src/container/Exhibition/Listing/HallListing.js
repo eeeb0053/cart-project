@@ -17,7 +17,7 @@ const HallListing = ({match}) => {
   let columnWidth = [1 / 1, 1 / 2, 1 / 3, 1 / 4, 1 / 5];
   
   useEffect(() => {
-    axios.get("http://localhost:8080/exhbns/halls/"+match.params.hallNum, 
+    axios.get("http://localhost:8080/exhbns/hall/"+match.params.hallNum,
     ).then(resp => {
       setExhbnByHall(resp.data)
     }).catch(err => {

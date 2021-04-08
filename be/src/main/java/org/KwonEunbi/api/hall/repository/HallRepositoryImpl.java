@@ -19,10 +19,4 @@ public class HallRepositoryImpl extends QuerydslRepositorySupport implements Hal
 		//this.qf = qf;
 		this.em = em;
 	}
-	@SuppressWarnings("unchecked")
-	@Override
-	public List<Hall> findByLocation(String location) {
-		return em.createQuery("select h from Hall h where h.hall_location like :hallLocation")
-				.setParameter("hallLocation", location).getResultList();
-	}
 }

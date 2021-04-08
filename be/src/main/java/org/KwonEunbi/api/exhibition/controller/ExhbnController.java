@@ -1,6 +1,8 @@
 package org.KwonEunbi.api.exhibition.controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 import com.querydsl.core.Tuple;
@@ -11,6 +13,8 @@ import org.KwonEunbi.api.exhibition.service.ExhbnServiceImpl;
 import org.KwonEunbi.api.hall.domain.Hall;
 
 import lombok.RequiredArgsConstructor;
+import org.KwonEunbi.api.hall.domain.HallDTO;
+import org.KwonEunbi.api.hall.service.HallServiceImpl;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -31,6 +35,7 @@ import org.slf4j.LoggerFactory;
 @RequestMapping("/exhbns")
 public class ExhbnController extends AbstractController<Exhbn> {
 	final ExhbnServiceImpl service;
+	final HallServiceImpl hallService;
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
 	@PostMapping("")
@@ -41,7 +46,7 @@ public class ExhbnController extends AbstractController<Exhbn> {
 	@PutMapping("/{exhbnNum}")
 	public ResponseEntity<Long> update(@RequestBody Exhbn t, @PathVariable long exhbnNum) {
 		logger.info("수정 정보: "+t.toString());
-		Exhbn e = service.findByExhbnNum(exhbnNum);
+		Exhbn e = service.getOne(exhbnNum);
 		if(!(t.getExhbnTitle().equals(e.getExhbnTitle()) || t.getExhbnTitle().equals(""))) {
 			e.setExhbnTitle(t.getExhbnTitle());
 		}
@@ -66,7 +71,7 @@ public class ExhbnController extends AbstractController<Exhbn> {
 		if(!(t.getExhbnImage().equals(e.getExhbnImage()) || t.getExhbnImage().equals(""))) {
 			e.setExhbnImage(t.getExhbnImage());
 		}
-		return ResponseEntity.ok(service.save(t));
+		return ResponseEntity.ok(service.save(e));
 	}
 
 	@DeleteMapping("")
@@ -99,7 +104,6 @@ public class ExhbnController extends AbstractController<Exhbn> {
 		return ResponseEntity.ok(service.findAll());
 	}
 
-
 	@GetMapping("/search/{exhbnTitle}")
 	public ResponseEntity<List<Exhbn>> searchTitle(@PathVariable String exhbnTitle){
 		return ResponseEntity.ok(service.searchTitle(exhbnTitle));
@@ -129,8 +133,13 @@ public class ExhbnController extends AbstractController<Exhbn> {
 	public ResponseEntity<List<Exhbn>> findByHall(@PathVariable  long id) {
 		return ResponseEntity.ok(service.findByHall(id));
 	}
-	@GetMapping("/halls/{id}")
-	public ResponseEntity<List<ExhbnDTO>> findByHallNum(@PathVariable  long id) {
-		return ResponseEntity.ok(service.findByHallNum(id));
+	@GetMapping("/allInfo")
+	public ResponseEntity<List<Map<?,?>>> findAllInfo() {
+		Map<?, ?> map = new HashMap<>();
+		List<Long> hallNumList = service.findHallNum();
+		for(int i = 1; i <= hallNumList.size() ; i++){
+			// map(hallService.getOne(i).getHallName());
+		}
+		return null;
 	}
 }

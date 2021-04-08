@@ -80,7 +80,7 @@ export const FieldWrapper = styled.div`
     }
   }
 
-  /* Room guest component style */
+  /* Tickets component style */
   .view_with__popup {
     .popup_handler {
       button,
@@ -129,7 +129,7 @@ export const FieldWrapper = styled.div`
   }
 `;
 
-export const RoomGuestWrapper = styled.div`
+export const TicketsWrapper = styled.div`
   width: 100%;
   strong {
     font-size: 15px;

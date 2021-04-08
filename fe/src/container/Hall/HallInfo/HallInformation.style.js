@@ -9,7 +9,6 @@ const HallWrapper = styled.div`
   justify-content: flex-start;
   align-content: flex-start;
   width: 75%;
-
   
   img {
     width: 100%;
@@ -20,31 +19,25 @@ const HallWrapper = styled.div`
       height: 406px;
     }
   }
-
   .hallInfo {
     max-width: 88%;
     margin-top: 50px;
-
     @media (max-width: 1200px) {
       width: 75%;
       position: relative;
       left: 100px;
     }
   }
-
   .hallSum {
     margin-top: 50px;
-
     @media (max-width: 1200px) {
       width: 75%;
       position: relative;
       left: 100px;
     }
-
     li {
       list-style-type: disc;
     }
-
     ul {
       color: ${themeGet('text.0', '#2C2C2C')};
       font-size: 15px;
@@ -56,13 +49,11 @@ const HallWrapper = styled.div`
       padding: 0px 50px 0px 0px;
     }
   }
-
   .wrap {
     text-align: center;
     position: relative;
-    left: 290px;
-    bottom: 50px;
-
+    left: 20rem;
+    bottom: 3.5rem;
     @media (max-width: 1200px) {
       position: relative;
       left: 0px;
@@ -70,7 +61,6 @@ const HallWrapper = styled.div`
       top: 70px;
       margin-bottom: 100px;
     }
-
     a {
       max-width: 150px;
       font-weight: bold;
@@ -80,16 +70,15 @@ const HallWrapper = styled.div`
   
     a.button {
       color: #ffffff;
-      background-color: #97abd1;
-      box-shadow: #97abd1 0 0px 0px 2px inset;
+      background-color: #e3c1c7;
+      box-shadow: #e3c1c7 0 0px 0px 2px inset;
     }
   
     a.button:hover {
       color: #ffffff;
-      box-shadow: #2c3e5e 0 0px 0px 40px inset;
+      box-shadow: #b3848c 0 0px 0px 40px inset;
     }
   }
-
 `;
 
 export const HallBoxOne = styled.div`
@@ -101,7 +90,6 @@ export const HallBoxTwo = styled.div`
 export const HallImage = styled.div`
   width: 800px;
   
-
   
 `;
 
@@ -113,6 +101,11 @@ export const HallSum = styled.div`
 `;
 
 export const HallBtn = styled.div`
+`;
+
+export const ButtonBox = styled.div`
+  margin-left: 0px;
+  margin-top: 30px;
 `;
 
 export default HallWrapper;

@@ -1,7 +1,7 @@
 export {default as Error404} from 'container/common/404/Error404'
 export {default as AddExhibition} from 'container/exhibition/AddExhibition'
 export {default as AddListingAction} from 'container/exhibition/AddListingAction'
-export {default as HotelPhotos} from 'container/exhibition/HotelPhotos'
+export {default as ExhibitionPhotos} from 'container/exhibition/ExhibitionPhotos'
 export {default as UpdateExhbn} from 'container/exhibition/UpdateExhibition'
 export {default as UserDetailsPage} from 'container/user/MyPage/AccountDetails/UserDetailsPage'
 export {default as UserFavItemLists} from 'container/user/MyPage/AccountDetails/UserFavItemLists'

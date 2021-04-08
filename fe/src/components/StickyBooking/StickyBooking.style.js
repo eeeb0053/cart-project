@@ -16,7 +16,7 @@ const StickyBookingWrapper = styled.div`
   box-shadow: 0 1px 4px 1px ${themeGet('boxShadow.1', 'rgba(0, 0, 0, 0.16')};
 `;
 
-export const HotelInfo = styled.div`
+export const ExhibitionInfo = styled.div`
   display: flex;
   align-items: center;
 `;
@@ -45,7 +45,7 @@ export const Title = styled.h3`
   color: ${themeGet('text.0', '#2C2C2C')};
 `;
 
-export const HotelRating = styled.div`
+export const ExhibitionRating = styled.div`
   display: flex;
   align-items: center;
   color: ${themeGet('text.0', '#2C2C2C')};
@@ -74,7 +74,7 @@ export const HotelRating = styled.div`
   }
 `;
 
-export const HotelAction = styled.div`
+export const ExhibitionAction = styled.div`
   display: flex;
   align-items: center;
   flex-shrink: 0;

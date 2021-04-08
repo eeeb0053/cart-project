@@ -2,7 +2,9 @@ package org.KwonEunbi.api.hall.service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
+import org.KwonEunbi.api.hall.domain.HallDTO;
 import org.springframework.stereotype.Service;
 
 import org.KwonEunbi.api.common.service.AbstractService;
@@ -40,16 +42,14 @@ public class HallServiceImpl extends AbstractService<Hall> implements HallServic
     public boolean existsById(long id) {
     	return hallRepository.existsById(id);
     }
-    @Override 
-    public List<Hall> findAll() {
-    	return hallRepository.findAll();
-    }
     @Override
-    public List<Hall> findByHallNameAndHallLocation(String name, String location) {
-    	return hallRepository.findByHallNameAndHallLocation(name, location);
+	public List<Hall> findAll() { return hallRepository.findAll();}
+    @Override
+    public List<HallDTO> findAllHall() {
+		return hallRepository.findAll().stream().map(i -> new HallDTO(i)).collect(Collectors.toList());
     }
-	@Override 
-	public long update(String hallClosed, long hallNum) { 
-		return hallRepository.update(hallClosed, hallNum);
-	}
+	@Override public long update(String hallName, String hallLocation, String hallTime, String hallClosed,
+								 String hallPnumber, String hallInfo, String hallImage, long hallNum) {
+		return hallRepository.update(hallName, hallLocation, hallTime, hallClosed, hallPnumber,
+				hallInfo, hallImage, hallNum);}
 }

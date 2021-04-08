@@ -20,7 +20,7 @@ import java.util.Date;
 public class SecurityToken {
     private final String token;
     private final String key;
-    private int tokenExpirationMsec = 3600000; // 만료시간 60분
+    private int tokenExpirationMsec = 7200000; // 만료시간 120분
     private static final String AUTHORITIES_KEY = "role";
 
     SecurityToken(String id, String role, Date expiredDate, String key) {

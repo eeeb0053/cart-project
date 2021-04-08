@@ -27,6 +27,7 @@ public class UserVO {
 	@Column private String email;
 	@Column private String gender;
 	@Column private String birthday;
+	@Column private String admin;
 	@Column(name = "phone_number") private String phoneNumber;
 	@Column(name = "prefer_genre") private String preferGenre;
 

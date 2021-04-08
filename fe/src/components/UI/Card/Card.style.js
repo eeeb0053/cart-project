@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
   width: 100%;
   top: 50px;
   `;
+
 export const Header = styled.header`
   display: flex;
   justify-content: space-between;

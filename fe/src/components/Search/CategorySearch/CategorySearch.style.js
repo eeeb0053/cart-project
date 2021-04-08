@@ -113,7 +113,7 @@ const CategroySearchWrapper = styled.div`
   }
 `;
 
-export const RoomGuestWrapper = styled.div`
+export const TicketsWrapper = styled.div`
   width: 100%;
 
   strong {

@@ -23,7 +23,7 @@ import {
   FilterArea,
   FilterElementsWrapper,
   ButtonGroup,
-  RoomGuestWrapper,
+  TicketsWrapper,
   ItemWrapper,
 } from './MobileSearchView.style';
 
@@ -51,7 +51,7 @@ export const FilterDrawer = ({ history, location }) => {
     guest:
       searchParams && searchParams.guest ? parseInt(searchParams.guest) : 0,
   };
-  const [roomGuest, setRoomGuest] = useState(
+  const [roomGuest, setTickets] = useState(
     roomAndGuest || {
       room: 0,
       guest: 0,
@@ -59,7 +59,7 @@ export const FilterDrawer = ({ history, location }) => {
   );
   const handleIncrement = (type) => {
     console.log('clicked handleIncrement');
-    setRoomGuest({
+    setTickets({
       ...roomGuest,
       [type]: roomGuest[type] + 1,
     });
@@ -69,14 +69,14 @@ export const FilterDrawer = ({ history, location }) => {
     if (roomGuest[type] <= 0) {
       return false;
     }
-    setRoomGuest({
+    setTickets({
       ...roomGuest,
       [type]: roomGuest[type] - 1,
     });
   };
   const handleIncDecOnChange = (e, type) => {
     let currentValue = e.target.value;
-    setRoomGuest({
+    setTickets({
       ...roomGuest,
       [type]: currentValue,
     });
@@ -134,7 +134,7 @@ export const FilterDrawer = ({ history, location }) => {
       defaultMin: 0,
       defaultMax: 100,
     });
-    setRoomGuest({
+    setTickets({
       room: 0,
       guest: 0,
     });
@@ -237,7 +237,7 @@ export const FilterDrawer = ({ history, location }) => {
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel>
-                <RoomGuestWrapper>
+                <TicketsWrapper>
                   <ItemWrapper>
                     <strong>Room</strong>
                     <InputIncDec
@@ -259,7 +259,7 @@ export const FilterDrawer = ({ history, location }) => {
                       value={roomGuest.guest}
                     />
                   </ItemWrapper>
-                </RoomGuestWrapper>
+                </TicketsWrapper>
               </AccordionItemPanel>
             </AccordionItem>
             {/* End of Room & Guest type filter element */}

@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import HallWrapper, { 
-  HallImage, HallInfo, HallBoxOne, HallBoxTwo, HallSum, 
-  HallBtn } from 'container/hall/HallInfo/HallInformation.style';
+import HallWrapper, { HallImage, HallBoxOne, 
+  HallBoxTwo, HallBtn, ButtonBox } from 'container/hall/HallInfo/HallInformation.style';
 import { Heading, Text } from 'components/index';
-import { EXHBN_LIST_PAGE } from 'settings/constant';
-import { Link } from 'react-router-dom';
+import { EXHBN_LIST_PAGE, ADD_HALL_PAGE, UPDATE_HALL_PAGE } from 'settings/constant';
+import { Link, useHistory } from 'react-router-dom';
+import axios from 'axios';
 
 const HallInformation = (props) => {
   const {
@@ -17,10 +17,33 @@ const HallInformation = (props) => {
     content,
     titleStyle,
     contentStyle,
-    media,
-    num
+    media
   }
 = props;
+
+  let history = useHistory();
+
+  const deleteHall = e => {
+    e.preventDefault()
+    window.confirm("전시관을 삭제하시겠습니까?")
+    axios({
+      url: 'http://localhost:8080/halls',
+      method: 'delete',
+      headers: {
+        'Content-Type'  : 'application/json',
+        'Authorization' : 'Bearer '+localStorage.getItem("token")
+      },
+      data: { hallNum: props.num }
+    })
+    .then(resp => {
+      alert(`삭제 완료`)
+      history.push(ADD_HALL_PAGE)
+    })
+    .catch(err => {
+      alert(`삭제 실패`)
+      throw err;
+    })
+  }
 
   return (
     <HallWrapper>
@@ -50,6 +73,15 @@ const HallInformation = (props) => {
           </div>
         </HallBtn>
       </HallBoxTwo>
+      <ButtonBox>
+          <Link to={ADD_HALL_PAGE}>
+          <button className="btn">등록</button>
+          </Link>
+          <Link to={`${UPDATE_HALL_PAGE}/${props.num}`}>
+          <button className="btn">수정</button>
+          </Link>
+          <button className="cancle-btn" onClick={ deleteHall }>삭제</button>
+      </ButtonBox>
     </HallWrapper>
   );
 };

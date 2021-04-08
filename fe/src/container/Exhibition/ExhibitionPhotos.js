@@ -8,28 +8,28 @@ import { AddListingAction } from 'container/index';
 import { FormHeader, Title, FormContent, FormAction } from 'container/exhibition/AddExhibition.style';
 import axios from 'axios'
 
-const HotelPhotos = ({ setStep }) => {
+const ExhibitionPhotos = ({ setStep }) => {
   const { register, errors, setValue, handleSubmit } = useForm({
     
  /*    defaultValues: {
-      hotelPhotos: [
+      exhibitionPhotos: [
         {
           uid: '1',
-          name: 'hotel-1.png',
+          name: 'exhibition-1.png',
           status: 'done',
           url:
             'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
         },
         {
           uid: '2',
-          name: 'hotel-2.png',
+          name: 'exhibition-2.png',
           status: 'done',
           url:
             'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
         },
         {
           uid: '3',
-          name: 'hotel-3.png',
+          name: 'exhibition-3.png',
           status: 'done',
           url:
             'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
@@ -100,4 +100,4 @@ const HotelPhotos = ({ setStep }) => {
   );
 };
 
-export default HotelPhotos;
+export default ExhibitionPhotos;

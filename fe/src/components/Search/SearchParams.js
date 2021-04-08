@@ -29,7 +29,7 @@ export const getPropertyType = {
   identifier: 'property-type',
   options: [
     { label: '서소문본관', value: 'villa' },
-    { label: '북서울미술관', value: 'hotel' },
+    { label: '북서울미술관', value: 'exhibition' },
     { label: '남서울미술관', value: 'resort' },
     { label: '난지미술창작스튜디오', value: 'cottage' },
     { label: 'SeMA창고', value: 'duplex' },

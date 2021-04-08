@@ -17,6 +17,7 @@ interface ExhbnCustomRepository{
 	public List<Exhbn> finExhbn();
 	public List<Exhbn> findByHall(long id);
 	public List<ExhbnDTO> findByHallNum(long id);
+	public List<Exhbn> findAllInfo();
 }
 public interface ExhbnRepository extends JpaRepository<Exhbn, Long>, ExhbnCustomRepository {
 	@Query(value="update exhbns e set e.exhbn_title = :exhbnTitle, e.start_date = :startDate, "
@@ -35,6 +36,6 @@ public interface ExhbnRepository extends JpaRepository<Exhbn, Long>, ExhbnCustom
 						@Param("hallLocation") String hallLocation,
 						@Param("exhbnNum") long exhbnNum);
 	
-	@Query(value="select * from exhbns e where e.exhbn_num like :exhbnNum", nativeQuery = true)
-	public Exhbn findByExhbnNum(@Param("exhbnNum") long exhbnNum);
+	@Query(value="select distinct hall_num from exhbns e", nativeQuery = true)
+	public List<Long> findHallNum();
 }

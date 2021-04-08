@@ -6,21 +6,15 @@ import java.util.Optional;
 import org.KwonEunbi.api.analysis.service.AnalysisServiceImpl;
 import org.KwonEunbi.api.common.controller.AbstractController;
 import org.KwonEunbi.api.hall.domain.Hall;
+import org.KwonEunbi.api.hall.domain.HallDTO;
 import org.KwonEunbi.api.hall.service.HallServiceImpl;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-@RestController 
-@RequiredArgsConstructor 
+@RestController
+@RequiredArgsConstructor
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequestMapping("/halls")
 public class HallController extends AbstractController<Hall> {
@@ -56,9 +50,40 @@ public class HallController extends AbstractController<Hall> {
 		return ResponseEntity.ok(service.existsById(id));
 	}
 
-	@GetMapping("")
+	@GetMapping("/all")
 	public ResponseEntity<List<Hall>> findAll() {
 		return ResponseEntity.ok(service.findAll());
 	}
-	
+
+	@GetMapping("")
+	public ResponseEntity<List<HallDTO>> findAllHall() {
+		return ResponseEntity.ok(service.findAllHall());
+	}
+
+	@PutMapping("/{id}")
+	public ResponseEntity<Long> update(@RequestBody Hall t, @PathVariable long id) {
+		Hall h = service.getOne(id);
+		if(!(t.getHallName().equals(h.getHallName()) || t.getHallName().equals(""))) {
+			h.setHallName(t.getHallName());
+		}
+		if(!(t.getHallLocation().equals(h.getHallLocation()) || t.getHallLocation().equals(""))) {
+			h.setHallLocation(t.getHallLocation());
+		}
+		if(!(t.getHallTime().equals(h.getHallTime()) || t.getHallTime().equals(""))) {
+			h.setHallTime(t.getHallTime());
+		}
+		if(!(t.getHallClosed().equals(h.getHallClosed()) || t.getHallClosed().equals(""))) {
+			h.setHallClosed(t.getHallClosed());
+		}
+		if(!(t.getHallPnumber().equals(h.getHallPnumber()) || t.getHallPnumber().equals(""))) {
+			h.setHallPnumber(t.getHallPnumber());
+		}
+		if(!(t.getHallInfo().equals(h.getHallInfo()) || t.getHallInfo().equals(""))) {
+			h.setHallInfo(t.getHallInfo());
+		}
+		if(!(t.getHallImage().equals(h.getHallImage()) || t.getHallImage().equals(""))) {
+			h.setHallImage(t.getHallImage());
+		}
+		return ResponseEntity.ok(service.save(h));
+	}
 }

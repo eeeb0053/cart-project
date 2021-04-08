@@ -8,7 +8,7 @@ import {
 } from 'settings/constant';
 
 const PopularExhbn = () => {
-  const { data, loading } = useDataApi('http://localhost:8080/exhbns/topList');
+  const { data, loading } = useDataApi('http://localhost:8080/exhbns/all');
   const { width } = useWindowSize();
 
   let posts = data;

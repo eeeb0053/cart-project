@@ -45,8 +45,8 @@
 		],
 		"image": {
 			"id": 90096,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-1.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-1_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-1.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-1_thumb.jpg"
 		},
 		"location": {
 			"id": 67404,
@@ -63,15 +63,15 @@
 		"gallery": [
 			{
 				"id": 11287,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-2_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-2_thumb.jpg"
 			},
 			{
 				"id": 51759,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-3_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-3_thumb.jpg"
 			},
 			{
 				"id": 1888,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-4_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-4_thumb.jpg"
 			}
 		]
 	},
@@ -84,7 +84,7 @@
 		"status": "publish",
 		"price": "768.00",
 		"isNegotiable": true,
-		"propertyType": "Hotel",
+		"propertyType": "Exhibition",
 		"condition": "Poor",
 		"rating": 2,
 		"ratingCount": 1,
@@ -121,8 +121,8 @@
 		],
 		"image": {
 			"id": 25738,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-7.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-7_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-7.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-7_thumb.jpg"
 		},
 		"location": {
 			"id": 57557,
@@ -139,15 +139,15 @@
 		"gallery": [
 			{
 				"id": 64454,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-8_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-8_thumb.jpg"
 			},
 			{
 				"id": 21253,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-10_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-10_thumb.jpg"
 			},
 			{
 				"id": 46809,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-9_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-9_thumb.jpg"
 			}
 		]
 	},
@@ -197,8 +197,8 @@
 		],
 		"image": {
 			"id": 42681,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-13.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-13_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-13.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-13_thumb.jpg"
 		},
 		"location": {
 			"id": 45160,
@@ -215,15 +215,15 @@
 		"gallery": [
 			{
 				"id": 37686,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-14_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-14_thumb.jpg"
 			},
 			{
 				"id": 15249,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-15_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-15_thumb.jpg"
 			},
 			{
 				"id": 23724,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-16_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-16_thumb.jpg"
 			}
 		]
 	},
@@ -236,7 +236,7 @@
 		"status": "publish",
 		"price": "662.00",
 		"isNegotiable": true,
-		"propertyType": "Hotel",
+		"propertyType": "Exhibition",
 		"condition": "Terrible",
 		"rating": 4.76,
 		"ratingCount": 12,
@@ -273,8 +273,8 @@
 		],
 		"image": {
 			"id": 87047,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-19.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-19_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-19.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-19_thumb.jpg"
 		},
 		"location": {
 			"id": 27125,
@@ -291,15 +291,15 @@
 		"gallery": [
 			{
 				"id": 62073,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-20_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-20_thumb.jpg"
 			},
 			{
 				"id": 94501,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-1_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-1_thumb.jpg"
 			},
 			{
 				"id": 11548,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-2_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-2_thumb.jpg"
 			}
 		]
 	},
@@ -312,7 +312,7 @@
 		"status": "draft",
 		"price": "888.00",
 		"isNegotiable": false,
-		"propertyType": "Hotel",
+		"propertyType": "Exhibition",
 		"condition": "Poor",
 		"rating": 2.8,
 		"ratingCount": 2,
@@ -349,8 +349,8 @@
 		],
 		"image": {
 			"id": 32194,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-5.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-5_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-5.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-5_thumb.jpg"
 		},
 		"location": {
 			"id": 33715,
@@ -367,15 +367,15 @@
 		"gallery": [
 			{
 				"id": 51437,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-6_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-6_thumb.jpg"
 			},
 			{
 				"id": 62903,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-7_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-7_thumb.jpg"
 			},
 			{
 				"id": 69198,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-8_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-8_thumb.jpg"
 			}
 		]
 	},
@@ -388,7 +388,7 @@
 		"status": "draft",
 		"price": "316.00",
 		"isNegotiable": true,
-		"propertyType": "Hotel",
+		"propertyType": "Exhibition",
 		"condition": "Good",
 		"rating": 2.5,
 		"ratingCount": 12,
@@ -425,8 +425,8 @@
 		],
 		"image": {
 			"id": 52861,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-11.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-11_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-11.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-11_thumb.jpg"
 		},
 		"location": {
 			"id": 23076,
@@ -443,15 +443,15 @@
 		"gallery": [
 			{
 				"id": 98348,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-12_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-12_thumb.jpg"
 			},
 			{
 				"id": 10832,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-13_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-13_thumb.jpg"
 			},
 			{
 				"id": 70635,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-14_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-14_thumb.jpg"
 			}
 		]
 	},
@@ -464,7 +464,7 @@
 		"status": "publish",
 		"price": "245.00",
 		"isNegotiable": false,
-		"propertyType": "Hotel",
+		"propertyType": "Exhibition",
 		"condition": "Good",
 		"rating": 3.5,
 		"ratingCount": 11,
@@ -501,8 +501,8 @@
 		],
 		"image": {
 			"id": 91141,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-17.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-17_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-17.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-17_thumb.jpg"
 		},
 		"location": {
 			"id": 10393,
@@ -519,15 +519,15 @@
 		"gallery": [
 			{
 				"id": 99115,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-18_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-18_thumb.jpg"
 			},
 			{
 				"id": 27188,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-19_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-19_thumb.jpg"
 			},
 			{
 				"id": 33855,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-20_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-20_thumb.jpg"
 			}
 		]
 	},
@@ -577,8 +577,8 @@
 		],
 		"image": {
 			"id": 14297,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-3.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-3_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-3.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-3_thumb.jpg"
 		},
 		"location": {
 			"id": 93702,
@@ -595,15 +595,15 @@
 		"gallery": [
 			{
 				"id": 35180,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-4_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-4_thumb.jpg"
 			},
 			{
 				"id": 27573,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-5_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-5_thumb.jpg"
 			},
 			{
 				"id": 68402,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-6_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-6_thumb.jpg"
 			}
 		]
 	},
@@ -653,8 +653,8 @@
 		],
 		"image": {
 			"id": 22340,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-9.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-9_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-9.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-9_thumb.jpg"
 		},
 		"location": {
 			"id": 81726,
@@ -671,15 +671,15 @@
 		"gallery": [
 			{
 				"id": 70509,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-10_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-10_thumb.jpg"
 			},
 			{
 				"id": 32412,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-11_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-11_thumb.jpg"
 			},
 			{
 				"id": 12967,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-12_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-12_thumb.jpg"
 			}
 		]
 	},
@@ -692,7 +692,7 @@
 		"status": "publish",
 		"price": "195.00",
 		"isNegotiable": true,
-		"propertyType": "Hotel",
+		"propertyType": "Exhibition",
 		"condition": "Excellent",
 		"rating": 5,
 		"ratingCount": 8,
@@ -729,8 +729,8 @@
 		],
 		"image": {
 			"id": 60214,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-15.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-15_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-15.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-15_thumb.jpg"
 		},
 		"location": {
 			"id": 82805,
@@ -747,15 +747,15 @@
 		"gallery": [
 			{
 				"id": 7788,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-16_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-16_thumb.jpg"
 			},
 			{
 				"id": 21707,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-17_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-17_thumb.jpg"
 			},
 			{
 				"id": 7459,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-18_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-18_thumb.jpg"
 			}
 		]
 	},
@@ -768,7 +768,7 @@
 		"status": "draft",
 		"price": "410.00",
 		"isNegotiable": true,
-		"propertyType": "Hotel",
+		"propertyType": "Exhibition",
 		"condition": "Poor",
 		"rating": 2.5,
 		"ratingCount": 11,
@@ -805,8 +805,8 @@
 		],
 		"image": {
 			"id": 26144,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-1.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-1_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-1.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-1_thumb.jpg"
 		},
 		"location": {
 			"id": 84050,
@@ -823,15 +823,15 @@
 		"gallery": [
 			{
 				"id": 44332,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-2_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-2_thumb.jpg"
 			},
 			{
 				"id": 34700,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-3_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-3_thumb.jpg"
 			},
 			{
 				"id": 99806,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-4_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-4_thumb.jpg"
 			}
 		]
 	},
@@ -881,8 +881,8 @@
 		],
 		"image": {
 			"id": 49595,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-7.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-7_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-7.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-7_thumb.jpg"
 		},
 		"location": {
 			"id": 74790,
@@ -899,15 +899,15 @@
 		"gallery": [
 			{
 				"id": 58613,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-8_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-8_thumb.jpg"
 			},
 			{
 				"id": 44236,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-9_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-9_thumb.jpg"
 			},
 			{
 				"id": 21946,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-10_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-10_thumb.jpg"
 			}
 		]
 	},
@@ -920,7 +920,7 @@
 		"status": "publish",
 		"price": "30.00",
 		"isNegotiable": true,
-		"propertyType": "Hotel",
+		"propertyType": "Exhibition",
 		"condition": "Average",
 		"rating": 1.5,
 		"ratingCount": 8,
@@ -957,8 +957,8 @@
 		],
 		"image": {
 			"id": 1719,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-13.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-13_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-13.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-13_thumb.jpg"
 		},
 		"location": {
 			"id": 34339,
@@ -975,15 +975,15 @@
 		"gallery": [
 			{
 				"id": 14495,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-14_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-14_thumb.jpg"
 			},
 			{
 				"id": 83768,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-15_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-15_thumb.jpg"
 			},
 			{
 				"id": 57361,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-16_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-16_thumb.jpg"
 			}
 		]
 	},
@@ -1033,8 +1033,8 @@
 		],
 		"image": {
 			"id": 66682,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-19.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-19_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-19.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-19_thumb.jpg"
 		},
 		"location": {
 			"id": 28501,
@@ -1051,15 +1051,15 @@
 		"gallery": [
 			{
 				"id": 83511,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-20_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-20_thumb.jpg"
 			},
 			{
 				"id": 96769,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-1_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-1_thumb.jpg"
 			},
 			{
 				"id": 71739,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-2_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-2_thumb.jpg"
 			}
 		]
 	},
@@ -1109,8 +1109,8 @@
 		],
 		"image": {
 			"id": 27169,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-5.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-5_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-5.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-5_thumb.jpg"
 		},
 		"location": {
 			"id": 52689,
@@ -1127,15 +1127,15 @@
 		"gallery": [
 			{
 				"id": 21583,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-6_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-6_thumb.jpg"
 			},
 			{
 				"id": 6406,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-7_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-7_thumb.jpg"
 			},
 			{
 				"id": 68447,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-8_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-8_thumb.jpg"
 			}
 		]
 	},
@@ -1148,7 +1148,7 @@
 		"status": "publish",
 		"price": "438.00",
 		"isNegotiable": true,
-		"propertyType": "Hotel",
+		"propertyType": "Exhibition",
 		"condition": "Poor",
 		"rating": 1.5,
 		"ratingCount": 1,
@@ -1185,8 +1185,8 @@
 		],
 		"image": {
 			"id": 83800,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-11.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-11_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-11.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-11_thumb.jpg"
 		},
 		"location": {
 			"id": 90805,
@@ -1203,15 +1203,15 @@
 		"gallery": [
 			{
 				"id": 42616,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-12_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-12_thumb.jpg"
 			},
 			{
 				"id": 28382,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-13_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-13_thumb.jpg"
 			},
 			{
 				"id": 55505,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-14_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-14_thumb.jpg"
 			}
 		]
 	},
@@ -1261,8 +1261,8 @@
 		],
 		"image": {
 			"id": 81248,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-18.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-18_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-18.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-18_thumb.jpg"
 		},
 		"location": {
 			"id": 56947,
@@ -1279,15 +1279,15 @@
 		"gallery": [
 			{
 				"id": 43904,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-17_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-17_thumb.jpg"
 			},
 			{
 				"id": 37243,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-20_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-20_thumb.jpg"
 			},
 			{
 				"id": 76234,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-19_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-19_thumb.jpg"
 			}
 		]
 	},
@@ -1337,8 +1337,8 @@
 		],
 		"image": {
 			"id": 37089,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-2.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-2_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-2.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-2_thumb.jpg"
 		},
 		"location": {
 			"id": 72441,
@@ -1355,15 +1355,15 @@
 		"gallery": [
 			{
 				"id": 22071,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-4_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-4_thumb.jpg"
 			},
 			{
 				"id": 41217,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-3_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-3_thumb.jpg"
 			},
 			{
 				"id": 9590,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-6_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-6_thumb.jpg"
 			}
 		]
 	},
@@ -1376,7 +1376,7 @@
 		"status": "draft",
 		"price": "204.00",
 		"isNegotiable": false,
-		"propertyType": "Hotel",
+		"propertyType": "Exhibition",
 		"condition": "Average",
 		"rating": 4.76,
 		"ratingCount": 11,
@@ -1413,8 +1413,8 @@
 		],
 		"image": {
 			"id": 80393,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-9.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-9_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-9.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-9_thumb.jpg"
 		},
 		"location": {
 			"id": 34290,
@@ -1431,15 +1431,15 @@
 		"gallery": [
 			{
 				"id": 37128,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-10_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-10_thumb.jpg"
 			},
 			{
 				"id": 58920,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-11_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-11_thumb.jpg"
 			},
 			{
 				"id": 54862,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-12_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-12_thumb.jpg"
 			}
 		]
 	},
@@ -1452,7 +1452,7 @@
 		"status": "publish",
 		"price": "648.00",
 		"isNegotiable": true,
-		"propertyType": "Hotel",
+		"propertyType": "Exhibition",
 		"condition": "Good",
 		"rating": 3.9,
 		"ratingCount": 7,
@@ -1489,8 +1489,8 @@
 		],
 		"image": {
 			"id": 31814,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-15.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-15_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-15.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-15_thumb.jpg"
 		},
 		"location": {
 			"id": 45327,
@@ -1507,15 +1507,15 @@
 		"gallery": [
 			{
 				"id": 86126,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-18_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-18_thumb.jpg"
 			},
 			{
 				"id": 37165,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-17_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-17_thumb.jpg"
 			},
 			{
 				"id": 39914,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-16_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-16_thumb.jpg"
 			}
 		]
 	},
@@ -1565,8 +1565,8 @@
 		],
 		"image": {
 			"id": 24561,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-1.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-1_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-1.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-1_thumb.jpg"
 		},
 		"location": {
 			"id": 28783,
@@ -1583,15 +1583,15 @@
 		"gallery": [
 			{
 				"id": 54880,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-2_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-2_thumb.jpg"
 			},
 			{
 				"id": 25028,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-3_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-3_thumb.jpg"
 			},
 			{
 				"id": 96290,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-4_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-4_thumb.jpg"
 			}
 		]
 	},
@@ -1641,8 +1641,8 @@
 		],
 		"image": {
 			"id": 38980,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-1.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-1_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-1.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-1_thumb.jpg"
 		},
 		"location": {
 			"id": 81797,
@@ -1659,15 +1659,15 @@
 		"gallery": [
 			{
 				"id": 17331,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-9_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-9_thumb.jpg"
 			},
 			{
 				"id": 50400,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-7_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-7_thumb.jpg"
 			},
 			{
 				"id": 33563,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-8_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-8_thumb.jpg"
 			}
 		]
 	},
@@ -1680,7 +1680,7 @@
 		"status": "publish",
 		"price": "487.00",
 		"isNegotiable": true,
-		"propertyType": "Hotel",
+		"propertyType": "Exhibition",
 		"condition": "Good",
 		"rating": 2.8,
 		"ratingCount": 7,
@@ -1717,8 +1717,8 @@
 		],
 		"image": {
 			"id": 31963,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-12.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-12_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-12.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-12_thumb.jpg"
 		},
 		"location": {
 			"id": 28469,
@@ -1735,15 +1735,15 @@
 		"gallery": [
 			{
 				"id": 35339,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-13_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-13_thumb.jpg"
 			},
 			{
 				"id": 53877,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-14_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-14_thumb.jpg"
 			},
 			{
 				"id": 20301,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-15_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-15_thumb.jpg"
 			}
 		]
 	},
@@ -1793,8 +1793,8 @@
 		],
 		"image": {
 			"id": 93284,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-18.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-18_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-18.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-18_thumb.jpg"
 		},
 		"location": {
 			"id": 63338,
@@ -1811,15 +1811,15 @@
 		"gallery": [
 			{
 				"id": 54753,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-19_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-19_thumb.jpg"
 			},
 			{
 				"id": 22077,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-20_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-20_thumb.jpg"
 			},
 			{
 				"id": 36516,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-1_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-1_thumb.jpg"
 			}
 		]
 	},
@@ -1869,8 +1869,8 @@
 		],
 		"image": {
 			"id": 99362,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-4.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-4_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-4.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-4_thumb.jpg"
 		},
 		"location": {
 			"id": 2732,
@@ -1887,15 +1887,15 @@
 		"gallery": [
 			{
 				"id": 20976,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-5_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-5_thumb.jpg"
 			},
 			{
 				"id": 67759,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-6_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-6_thumb.jpg"
 			},
 			{
 				"id": 14429,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-7_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-7_thumb.jpg"
 			}
 		]
 	},
@@ -1908,7 +1908,7 @@
 		"status": "publish",
 		"price": "180.00",
 		"isNegotiable": true,
-		"propertyType": "Hotel",
+		"propertyType": "Exhibition",
 		"condition": "Average",
 		"rating": 4.5,
 		"ratingCount": 12,
@@ -1945,8 +1945,8 @@
 		],
 		"image": {
 			"id": 60881,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-10.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-10_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-10.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-10_thumb.jpg"
 		},
 		"location": {
 			"id": 22316,
@@ -1963,15 +1963,15 @@
 		"gallery": [
 			{
 				"id": 13299,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-11_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-11_thumb.jpg"
 			},
 			{
 				"id": 8343,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-12_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-12_thumb.jpg"
 			},
 			{
 				"id": 75745,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-13_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-13_thumb.jpg"
 			}
 		]
 	},
@@ -2021,8 +2021,8 @@
 		],
 		"image": {
 			"id": 59346,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-16.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-16_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-16.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-16_thumb.jpg"
 		},
 		"location": {
 			"id": 51227,
@@ -2039,15 +2039,15 @@
 		"gallery": [
 			{
 				"id": 36812,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-17_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-17_thumb.jpg"
 			},
 			{
 				"id": 54332,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-18_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-18_thumb.jpg"
 			},
 			{
 				"id": 94838,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-19_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-19_thumb.jpg"
 			}
 		]
 	},
@@ -2060,7 +2060,7 @@
 		"status": "draft",
 		"price": "122.00",
 		"isNegotiable": true,
-		"propertyType": "Hotel",
+		"propertyType": "Exhibition",
 		"condition": "Excellent",
 		"rating": 4.76,
 		"ratingCount": 2,
@@ -2097,8 +2097,8 @@
 		],
 		"image": {
 			"id": 18787,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-2.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-2_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-2.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-2_thumb.jpg"
 		},
 		"location": {
 			"id": 84971,
@@ -2115,15 +2115,15 @@
 		"gallery": [
 			{
 				"id": 83227,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-16_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-16_thumb.jpg"
 			},
 			{
 				"id": 2954,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-15_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-15_thumb.jpg"
 			},
 			{
 				"id": 47260,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-14_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-14_thumb.jpg"
 			}
 		]
 	},
@@ -2173,8 +2173,8 @@
 		],
 		"image": {
 			"id": 27005,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-11.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-11_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-11.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-11_thumb.jpg"
 		},
 		"location": {
 			"id": 28607,
@@ -2191,15 +2191,15 @@
 		"gallery": [
 			{
 				"id": 91812,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-10_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-10_thumb.jpg"
 			},
 			{
 				"id": 84346,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-9_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-9_thumb.jpg"
 			},
 			{
 				"id": 24219,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-8_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-8_thumb.jpg"
 			}
 		]
 	},
@@ -2212,7 +2212,7 @@
 		"status": "draft",
 		"price": "450.00",
 		"isNegotiable": false,
-		"propertyType": "Hotel",
+		"propertyType": "Exhibition",
 		"condition": "Good",
 		"rating": 3.5,
 		"ratingCount": 10,
@@ -2249,8 +2249,8 @@
 		],
 		"image": {
 			"id": 37482,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-5.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-5_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-5.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-5_thumb.jpg"
 		},
 		"location": {
 			"id": 49740,
@@ -2267,15 +2267,15 @@
 		"gallery": [
 			{
 				"id": 30918,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-4_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-4_thumb.jpg"
 			},
 			{
 				"id": 44282,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-3_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-3_thumb.jpg"
 			},
 			{
 				"id": 34623,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-3_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-3_thumb.jpg"
 			}
 		]
 	},
@@ -2288,7 +2288,7 @@
 		"status": "draft",
 		"price": "228.00",
 		"isNegotiable": false,
-		"propertyType": "Hotel",
+		"propertyType": "Exhibition",
 		"condition": "Good",
 		"rating": 4.76,
 		"ratingCount": 16,
@@ -2325,8 +2325,8 @@
 		],
 		"image": {
 			"id": 35709,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-20.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-20_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-20.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-20_thumb.jpg"
 		},
 		"location": {
 			"id": 76980,
@@ -2343,15 +2343,15 @@
 		"gallery": [
 			{
 				"id": 54872,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-19_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-19_thumb.jpg"
 			},
 			{
 				"id": 25257,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-18_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-18_thumb.jpg"
 			},
 			{
 				"id": 65352,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-17_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-17_thumb.jpg"
 			}
 		]
 	},
@@ -2364,7 +2364,7 @@
 		"status": "draft",
 		"price": "630.00",
 		"isNegotiable": false,
-		"propertyType": "Hotel",
+		"propertyType": "Exhibition",
 		"condition": "Good",
 		"rating": 5,
 		"ratingCount": 10,
@@ -2401,8 +2401,8 @@
 		],
 		"image": {
 			"id": 80766,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-14.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-14_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-14.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-14_thumb.jpg"
 		},
 		"location": {
 			"id": 94428,
@@ -2419,15 +2419,15 @@
 		"gallery": [
 			{
 				"id": 83707,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-13_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-13_thumb.jpg"
 			},
 			{
 				"id": 28977,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-12_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-12_thumb.jpg"
 			},
 			{
 				"id": 26821,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-11_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-11_thumb.jpg"
 			}
 		]
 	},
@@ -2477,8 +2477,8 @@
 		],
 		"image": {
 			"id": 76016,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-8_thumb.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-8_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-8_thumb.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-8_thumb.jpg"
 		},
 		"location": {
 			"id": 60469,
@@ -2495,15 +2495,15 @@
 		"gallery": [
 			{
 				"id": 44655,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-7_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-7_thumb.jpg"
 			},
 			{
 				"id": 39401,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-6_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-6_thumb.jpg"
 			},
 			{
 				"id": 4174,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-5_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-5_thumb.jpg"
 			}
 		]
 	},
@@ -2553,8 +2553,8 @@
 		],
 		"image": {
 			"id": 33542,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-2jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-2_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-2jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-2_thumb.jpg"
 		},
 		"location": {
 			"id": 28332,
@@ -2571,15 +2571,15 @@
 		"gallery": [
 			{
 				"id": 50117,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-1_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-1_thumb.jpg"
 			},
 			{
 				"id": 69044,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-20_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-20_thumb.jpg"
 			},
 			{
 				"id": 92346,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-19_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-19_thumb.jpg"
 			}
 		]
 	},
@@ -2592,7 +2592,7 @@
 		"status": "draft",
 		"price": "50.00",
 		"isNegotiable": true,
-		"propertyType": "Hotel",
+		"propertyType": "Exhibition",
 		"condition": "Poor",
 		"rating": 1.5,
 		"ratingCount": 9,
@@ -2629,8 +2629,8 @@
 		],
 		"image": {
 			"id": 77963,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-16.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-16_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-16.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-16_thumb.jpg"
 		},
 		"location": {
 			"id": 208,
@@ -2647,15 +2647,15 @@
 		"gallery": [
 			{
 				"id": 1894,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-15_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-15_thumb.jpg"
 			},
 			{
 				"id": 67185,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-14_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-14_thumb.jpg"
 			},
 			{
 				"id": 85708,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-13_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-13_thumb.jpg"
 			}
 		]
 	},
@@ -2668,7 +2668,7 @@
 		"status": "publish",
 		"price": "980.00",
 		"isNegotiable": false,
-		"propertyType": "Hotel",
+		"propertyType": "Exhibition",
 		"condition": "Excellent",
 		"rating": 1.5,
 		"ratingCount": 9,
@@ -2705,8 +2705,8 @@
 		],
 		"image": {
 			"id": 76566,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-10.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-10_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-10.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-10_thumb.jpg"
 		},
 		"location": {
 			"id": 51236,
@@ -2723,15 +2723,15 @@
 		"gallery": [
 			{
 				"id": 21962,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-9_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-9_thumb.jpg"
 			},
 			{
 				"id": 55970,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-8_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-8_thumb.jpg"
 			},
 			{
 				"id": 57167,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-7_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-7_thumb.jpg"
 			}
 		]
 	},
@@ -2781,8 +2781,8 @@
 		],
 		"image": {
 			"id": 29985,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-4.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-4_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-4.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-4_thumb.jpg"
 		},
 		"location": {
 			"id": 81441,
@@ -2799,15 +2799,15 @@
 		"gallery": [
 			{
 				"id": 60047,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-3_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-3_thumb.jpg"
 			},
 			{
 				"id": 37297,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-2_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-2_thumb.jpg"
 			},
 			{
 				"id": 77118,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-1_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-1_thumb.jpg"
 			}
 		]
 	},
@@ -2857,8 +2857,8 @@
 		],
 		"image": {
 			"id": 73045,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-18.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-18_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-18.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-18_thumb.jpg"
 		},
 		"location": {
 			"id": 7531,
@@ -2875,15 +2875,15 @@
 		"gallery": [
 			{
 				"id": 54911,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-17_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-17_thumb.jpg"
 			},
 			{
 				"id": 96847,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-16_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-16_thumb.jpg"
 			},
 			{
 				"id": 69291,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-15_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-15_thumb.jpg"
 			}
 		]
 	},
@@ -2933,8 +2933,8 @@
 		],
 		"image": {
 			"id": 28745,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-12.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-12_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-12.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-12_thumb.jpg"
 		},
 		"location": {
 			"id": 57685,
@@ -2951,15 +2951,15 @@
 		"gallery": [
 			{
 				"id": 95712,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-11_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-11_thumb.jpg"
 			},
 			{
 				"id": 14953,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-9_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-9_thumb.jpg"
 			},
 			{
 				"id": 73203,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-10_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-10_thumb.jpg"
 			}
 		]
 	},
@@ -2972,7 +2972,7 @@
 		"status": "draft",
 		"price": "22.00",
 		"isNegotiable": false,
-		"propertyType": "Hotel",
+		"propertyType": "Exhibition",
 		"condition": "Good",
 		"rating": 5,
 		"ratingCount": 9,
@@ -3009,8 +3009,8 @@
 		],
 		"image": {
 			"id": 4850,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-6.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-6_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-6.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-6_thumb.jpg"
 		},
 		"location": {
 			"id": 50355,
@@ -3027,15 +3027,15 @@
 		"gallery": [
 			{
 				"id": 60783,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-5_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-5_thumb.jpg"
 			},
 			{
 				"id": 85913,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-4_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-4_thumb.jpg"
 			},
 			{
 				"id": 53254,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-3_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-3_thumb.jpg"
 			}
 		]
 	},
@@ -3048,7 +3048,7 @@
 		"status": "draft",
 		"price": "759.00",
 		"isNegotiable": true,
-		"propertyType": "Hotel",
+		"propertyType": "Exhibition",
 		"condition": "Poor",
 		"rating": 4.5,
 		"ratingCount": 6,
@@ -3085,8 +3085,8 @@
 		],
 		"image": {
 			"id": 99298,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-20.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-20_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-20.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-20_thumb.jpg"
 		},
 		"location": {
 			"id": 60072,
@@ -3103,15 +3103,15 @@
 		"gallery": [
 			{
 				"id": 95696,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-19_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-19_thumb.jpg"
 			},
 			{
 				"id": 47987,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-18_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-18_thumb.jpg"
 			},
 			{
 				"id": 78696,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-17_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-17_thumb.jpg"
 			}
 		]
 	},
@@ -3124,7 +3124,7 @@
 		"status": "draft",
 		"price": "786.00",
 		"isNegotiable": true,
-		"propertyType": "Hotel",
+		"propertyType": "Exhibition",
 		"condition": "Good",
 		"rating": 1.5,
 		"ratingCount": 12,
@@ -3161,8 +3161,8 @@
 		],
 		"image": {
 			"id": 25079,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-14.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-14_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-14.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-14_thumb.jpg"
 		},
 		"location": {
 			"id": 58604,
@@ -3179,15 +3179,15 @@
 		"gallery": [
 			{
 				"id": 57839,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-13_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-13_thumb.jpg"
 			},
 			{
 				"id": 84756,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-12_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-12_thumb.jpg"
 			},
 			{
 				"id": 93432,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-11_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-11_thumb.jpg"
 			}
 		]
 	},
@@ -3237,8 +3237,8 @@
 		],
 		"image": {
 			"id": 82888,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-8.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-8_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-8.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-8_thumb.jpg"
 		},
 		"location": {
 			"id": 89997,
@@ -3255,15 +3255,15 @@
 		"gallery": [
 			{
 				"id": 76516,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-7_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-7_thumb.jpg"
 			},
 			{
 				"id": 60508,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-6_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-6_thumb.jpg"
 			},
 			{
 				"id": 78119,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-5_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-5_thumb.jpg"
 			}
 		]
 	},
@@ -3313,8 +3313,8 @@
 		],
 		"image": {
 			"id": 97137,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-2.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-2_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-2.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-2_thumb.jpg"
 		},
 		"location": {
 			"id": 1879,
@@ -3331,15 +3331,15 @@
 		"gallery": [
 			{
 				"id": 91692,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-1_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-1_thumb.jpg"
 			},
 			{
 				"id": 46703,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-20_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-20_thumb.jpg"
 			},
 			{
 				"id": 5371,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-19_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-19_thumb.jpg"
 			}
 		]
 	},
@@ -3389,8 +3389,8 @@
 		],
 		"image": {
 			"id": 25935,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-16.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-16_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-16.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-16_thumb.jpg"
 		},
 		"location": {
 			"id": 9304,
@@ -3407,15 +3407,15 @@
 		"gallery": [
 			{
 				"id": 9500,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-15_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-15_thumb.jpg"
 			},
 			{
 				"id": 49786,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-14_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-14_thumb.jpg"
 			},
 			{
 				"id": 6738,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-13_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-13_thumb.jpg"
 			}
 		]
 	},
@@ -3428,7 +3428,7 @@
 		"status": "draft",
 		"price": "405.00",
 		"isNegotiable": false,
-		"propertyType": "Hotel",
+		"propertyType": "Exhibition",
 		"condition": "Average",
 		"rating": 3.5,
 		"ratingCount": 1,
@@ -3465,8 +3465,8 @@
 		],
 		"image": {
 			"id": 80556,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-10.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-10_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-10.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-10_thumb.jpg"
 		},
 		"location": {
 			"id": 86829,
@@ -3483,15 +3483,15 @@
 		"gallery": [
 			{
 				"id": 58430,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-9_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-9_thumb.jpg"
 			},
 			{
 				"id": 41380,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-8_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-8_thumb.jpg"
 			},
 			{
 				"id": 58941,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-7_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-7_thumb.jpg"
 			}
 		]
 	},
@@ -3541,8 +3541,8 @@
 		],
 		"image": {
 			"id": 32140,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-4.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-4_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-4.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-4_thumb.jpg"
 		},
 		"location": {
 			"id": 17324,
@@ -3559,15 +3559,15 @@
 		"gallery": [
 			{
 				"id": 23103,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-3_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-3_thumb.jpg"
 			},
 			{
 				"id": 8504,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-2_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-2_thumb.jpg"
 			},
 			{
 				"id": 67754,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-1_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-1_thumb.jpg"
 			}
 		]
 	},
@@ -3580,7 +3580,7 @@
 		"status": "draft",
 		"price": "253.00",
 		"isNegotiable": true,
-		"propertyType": "Hotel",
+		"propertyType": "Exhibition",
 		"condition": "Excellent",
 		"rating": 1.2,
 		"ratingCount": 6,
@@ -3617,8 +3617,8 @@
 		],
 		"image": {
 			"id": 41632,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-18.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-18_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-18.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-18_thumb.jpg"
 		},
 		"location": {
 			"id": 48797,
@@ -3635,15 +3635,15 @@
 		"gallery": [
 			{
 				"id": 49921,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-17_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-17_thumb.jpg"
 			},
 			{
 				"id": 43045,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-16_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-16_thumb.jpg"
 			},
 			{
 				"id": 19843,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-15_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-15_thumb.jpg"
 			}
 		]
 	},
@@ -3656,7 +3656,7 @@
 		"status": "publish",
 		"price": "834.00",
 		"isNegotiable": false,
-		"propertyType": "Hotel",
+		"propertyType": "Exhibition",
 		"condition": "Terrible",
 		"rating": 2.8,
 		"ratingCount": 15,
@@ -3693,8 +3693,8 @@
 		],
 		"image": {
 			"id": 78004,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-12.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-12_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-12.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-12_thumb.jpg"
 		},
 		"location": {
 			"id": 60343,
@@ -3711,15 +3711,15 @@
 		"gallery": [
 			{
 				"id": 31596,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-11_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-11_thumb.jpg"
 			},
 			{
 				"id": 51643,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-10_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-10_thumb.jpg"
 			},
 			{
 				"id": 83948,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-9_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-9_thumb.jpg"
 			}
 		]
 	},
@@ -3732,7 +3732,7 @@
 		"status": "draft",
 		"price": "559.00",
 		"isNegotiable": true,
-		"propertyType": "Hotel",
+		"propertyType": "Exhibition",
 		"condition": "Excellent",
 		"rating": 3.5,
 		"ratingCount": 2,
@@ -3769,8 +3769,8 @@
 		],
 		"image": {
 			"id": 36025,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-6.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-6_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-6.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-6_thumb.jpg"
 		},
 		"location": {
 			"id": 44703,
@@ -3787,15 +3787,15 @@
 		"gallery": [
 			{
 				"id": 37129,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-5_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-5_thumb.jpg"
 			},
 			{
 				"id": 77124,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-4_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-4_thumb.jpg"
 			},
 			{
 				"id": 85472,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-3_thumb.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-3_thumb.jpg"
 			}
 		]
 	}

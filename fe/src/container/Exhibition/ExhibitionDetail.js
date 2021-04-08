@@ -23,7 +23,7 @@ const SinglePage = ({ match }) => {
 
   const URL = `http://localhost:8080/exhbns/one/`
   
-  useEffect(() => {
+  useEffect(e => {
     axios.get(URL+match.params.exhbnNum)
     .then(resp => {
       setExhbnDetail(resp.data)
@@ -33,8 +33,6 @@ const SinglePage = ({ match }) => {
       throw err;
     })
   }, [])
-
-  sessionStorage.setItem("price", exhbnDetail.exhbnPrice)
 
   if (isEmpty(exhbnDetail)) return <Loader />;
   
@@ -66,6 +64,7 @@ const SinglePage = ({ match }) => {
 
   return (
     <SinglePageWrapper>
+       {/*  { localStorage.getItem("user").admin === '관리자' ? */}
         <ButtonBox>
           <Link to={ADD_EXHBN_PAGE}>
           <button className="btn">등록</button>
@@ -75,6 +74,8 @@ const SinglePage = ({ match }) => {
           </Link>
           <button className="cancle-btn" onClick={ deleteExhbn }>삭제</button>
         </ButtonBox>
+{/*         : <></>
+        } */}
       <Container>
         <Row gutter={30}>
           <Col xl={16}>

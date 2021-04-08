@@ -1,10 +1,9 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLocation } from 'library/hooks/useLocation';
-import Sticky from 'react-stickynode';
-import { Row, Col, Modal, Button } from 'antd';
+import { Row } from 'antd';
 import { Container, Loader } from 'components/index';
 import useWindowSize from 'library/hooks/useWindowSize';
-import useDataApi from 'library/hooks/useDataApi';
+import { useHistory } from 'react-router';
 import isEmpty from 'lodash/isEmpty';
 import { HallInformation, VerticalTab } from 'container/index';
 import HallPageWrapper from 'container/hall/HallDetail.style';
@@ -19,7 +18,7 @@ const HallDetail = ({ match }) => {
 
   const URL = `http://localhost:8080/halls/find/`
 
-  useEffect(() => {
+  useEffect(e => {
     axios.get(URL+match.params.hallNum)
     .then(resp => {
       setHallDetail(resp.data)
@@ -39,6 +38,8 @@ const HallDetail = ({ match }) => {
 
   return (
     <HallPageWrapper>
+     {/*  { localStorage.getItem("user").admin === '관리자' ? */}
+     {/*        : <></>} */}
       <Container>
         <Row gutter={30}>
           <VerticalTab />

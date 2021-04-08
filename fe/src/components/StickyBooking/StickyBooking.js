@@ -1,15 +1,15 @@
 import React from 'react';
 import useWindowSize from 'components/StickyBooking/useWindowSize';
 import StickyBookingWrapper, {
-  HotelInfo,
+  ExhibitionInfo,
   InfoArea,
   Title,
   Logo,
-  HotelAction,
+  ExhibitionAction,
   Price,
   ActionBtn,
-  HotelRating,
-} from './StickyBooking.style';
+  ExhibitionRating,
+} from 'components/StickyBooking/StickyBooking.style';
 
 const StickyBooking = ({ logo, title, price, rating, action, className }) => {
   const addAllClasses = ['sticky_booking'];
@@ -22,7 +22,7 @@ const StickyBooking = ({ logo, title, price, rating, action, className }) => {
 
   return (
     <StickyBookingWrapper className={addAllClasses.join(' ')}>
-      <HotelInfo className="hotel_info">
+      <ExhibitionInfo className="exhibition_info">
         {windowInnerWidth > 767 && (
           <>{logo && <Logo src={logo} alt={title} />}</>
         )}
@@ -36,21 +36,21 @@ const StickyBooking = ({ logo, title, price, rating, action, className }) => {
                 <span>{price}</span> / 1매
               </Price>
             )}
-            {rating && <HotelRating>{rating}</HotelRating>}
+            {rating && <ExhibitionRating>{rating}</ExhibitionRating>}
           </InfoArea>
         ) : (
           ''
         )}
-      </HotelInfo>
+      </ExhibitionInfo>
 
-      <HotelAction className="hotel_action">
+      <ExhibitionAction className="exhibition_action">
         {windowInnerWidth > 767 && (
           <Price>
             <span>{price}</span> / 1매
           </Price>
         )}
         <ActionBtn>{action}</ActionBtn>
-      </HotelAction>
+      </ExhibitionAction>
     </StickyBookingWrapper>
   );
 };

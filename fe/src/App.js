@@ -20,7 +20,9 @@ import {
   LISTING_SEARCH_POST_PAGE,
   ADD_EXHBN_PAGE,
   UPDATE_EXHBN_PAGE,
-  ADD_IMAGE_PAGE
+  ADD_IMAGE_PAGE,
+  ADD_HALL_PAGE,
+  UPDATE_HALL_PAGE
 } from 'settings/constant';
 
 /**
@@ -132,29 +134,19 @@ const routes = [
     }),
   },
   {
-    path: `${HALL_DETAIL_PAGE}/:hallNum`,
-    component: Loadable({
-      loader: () =>
-        import('./container/hall/HallDetail'),
-      loading: Loading,
-      modules: ['HallDetail'],
-    }),
-  },
-  {
     path: LISTING_SEARCH_POST_PAGE,
     component: Loadable({
       loader: () =>
-        import('./container/exhibition/Listing/SearchListing'),
+        import('container/exhibition/Listing/SearchListing'),
       loading: Loading,
       modules: ['SearchListing'],
     }),
   },
-
   {
     path: `${HALL_DETAIL_PAGE}/:hallNum`,
     component: Loadable({
       loader: () =>
-        import('./container/hall/HallDetail'),
+        import('container/hall/HallDetail'),
       loading: Loading,
       modules: ['HallDetail'],
     }),
@@ -163,7 +155,7 @@ const routes = [
     path: ADD_EXHBN_PAGE,
     component: Loadable({
       loader: () =>
-        import('./container/exhibition/AddExhibition'),
+        import('container/exhibition/AddExhibition'),
       loading: Loading,
       modules: ['AddExhibition'],
     }),
@@ -172,18 +164,36 @@ const routes = [
     path: `${UPDATE_EXHBN_PAGE}/:exhbnNum`,
     component: Loadable({
       loader: () =>
-        import('./container/exhibition/UpdateExhibition'),
+        import('container/exhibition/UpdateExhibition'),
       loading: Loading,
       modules: ['UpdateExhbn'],
+    }),
+  },
+  {
+    path: ADD_HALL_PAGE,
+    component: Loadable({
+      loader: () =>
+        import('container/hall/AddHall'),
+      loading: Loading,
+      modules: ['AddHall'],
+    }),
+  },
+  {
+    path: `${UPDATE_HALL_PAGE}/:hallNum`,
+    component: Loadable({
+      loader: () =>
+        import('container/hall/UpdateHall'),
+      loading: Loading,
+      modules: ['UpdateHall'],
     }),
   },
   {
     path: ADD_IMAGE_PAGE,
     component: Loadable({
       loader: () =>
-        import('./container/exhibition/HotelPhotos'),
+        import('container/exhibition/ExhibitionPhotos'),
       loading: Loading,
-      modules: ['HotelPhotos'],
+      modules: ['ExhibitionPhotos'],
     }),
   },
 ];
@@ -196,7 +206,7 @@ const routes = [
 
 const AccountSettingsPage = Loadable({
   loader: () =>
-    import('./container/user/MyPage/AccountSettings/AccountSettingsPage'),
+    import('container/user/MyPage/AccountSettings/AccountSettingsPage'),
   loading: Loading,
   modules: ['AccountSettingsPage'],
 });
@@ -211,7 +221,7 @@ const AccountSettingsPage = Loadable({
 
 const NotFound = Loadable({
   loader: () =>
-    import('./container/common/404/Error404'),
+    import('container/common/404/Error404'),
   loading: Loading,
   modules: ['NotFound'],
 });

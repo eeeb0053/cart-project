@@ -13,6 +13,7 @@ import static org.KwonEunbi.api.hall.domain.QHall.hall;
 import com.querydsl.core.Tuple;
 import lombok.RequiredArgsConstructor;
 import org.KwonEunbi.api.exhibition.domain.ExhbnDTO;
+import org.KwonEunbi.api.hall.domain.Hall;
 import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport;
 import org.springframework.stereotype.Repository;
 
@@ -65,5 +66,11 @@ public class ExhbnRepositoryImpl extends QuerydslRepositorySupport implements Ex
 				.join(exhbn.hall, hall).on(hall.hallNum.eq(id)).fetch();
 		System.out.println(list);
 		return null;
+	}
+
+	public List<Exhbn> findAllInfo(){
+		return em.createQuery("select e, h from Exhbn e " +
+				"				inner join Hall h on e.hallNum like h.hallNum", Exhbn.class)
+				.getResultList();
 	}
 }

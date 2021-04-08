@@ -8,7 +8,7 @@
 		"status": "draft",
 		"price": "253.00",
 		"isNegotiable": true,
-		"propertyType": "Hotel",
+		"propertyType": "Exhibition",
 		"condition": "Excellent",
 		"rating": 5,
 		"ratingCount": 35,
@@ -41,8 +41,8 @@
 		],
 		"image": {
 			"id": 41632,
-			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-1.jpg",
-			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-1_thumb.jpg"
+			"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-1.jpg",
+			"thumb_url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-1_thumb.jpg"
 		},
 		"location": {
 			"id": 48797,
@@ -59,15 +59,15 @@
 		"gallery": [
 			{
 				"id": 49921,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-single2.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-single2.jpg"
 			},
 			{
 				"id": 43045,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-single3.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-single3.jpg"
 			},
 			{
 				"id": 19843,
-				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-single4.jpg"
+				"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-single4.jpg"
 			}
 		],
 		"reviews": [
@@ -81,7 +81,7 @@
 				"reviewAuthorEmail": "Reed_Okuneva@yahoo.com",
 				"reviewAuthorPic": {
 					"id": 984,
-					"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-single7.jpg"
+					"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-single7.jpg"
 				},
 				"reviewDate": "2018-11-25T01:20:05.316Z",
 				"reviewFields": [
@@ -117,7 +117,7 @@
 				"reviewAuthorEmail": "Jacklyn.Corwin49@yahoo.com",
 				"reviewAuthorPic": {
 					"id": 18652,
-					"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-single3.jpg"
+					"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-single3.jpg"
 				},
 				"reviewDate": "2018-02-28T00:50:14.479Z",
 				"reviewFields": [
@@ -153,7 +153,7 @@
 				"reviewAuthorEmail": "Mozelle34@yahoo.com",
 				"reviewAuthorPic": {
 					"id": 44935,
-					"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-single6.jpg"
+					"url": "http://s3.amazonaws.com/redqteam.com/tripfinder-images/exhibition-single6.jpg"
 				},
 				"reviewDate": "2018-05-26T06:11:41.520Z",
 				"reviewFields": [
